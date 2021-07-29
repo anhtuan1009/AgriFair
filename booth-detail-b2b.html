@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header header-scroll">
+		<div class="header-top">
+			<div class="container clearfix">
+				<div class="menu-top-inner">
+					<div class="group-btn">
+						<div class="btn-back">
+							<a href="https://vnexpress.net" title="Quay lại VnExpress"><i class="fal fa-arrow-left"></i> Quay lại VnExpress</a>
+						</div>
+						<div class="list-item-socail">
+							<p>Chia sẻ <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+						<div class="box-user-login">
+
+
+							<!-- Start user chưa đăng nhập -->
+								<!-- <div class="user-not-logged-in">
+									<span class="btn-sign-in">Đăng nhập</span>
+								</div> -->
+							<!-- End user chưa đăng nhập -->
+
+							<!-- Start user đã đăng nhập -->
+								<div class="user-logged">
+									<div class="user-name">
+										<span class="avata">A</span>
+										<span class="name-value">Anh Tuấn</span>
+										<div class="dropdown-user" id="dropdown-user">
+											<ul class="myvne_user_status">
+												<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+												<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+												<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="user-notify">
+										<a href="" title="Bạn có 2 thông báo mới">
+											<i class="fas fa-bell"></i>
+											<span class="notify-number">2</span>
+										</a>
+									</div>
+								</div>
+							<!-- End user đã đăng nhập -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container clearfix">
+						
+				<div class="header-left">
+					<a class="logo" href="index.html" title="">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="header-right">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Gian hàng</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="3d-virtual-reality.html" title="">3D Virtual Reality</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+							<li>
+								<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+								<form class="form-search-top" id="frm_search" action="search.html" method="post">
+									<div class="form-group-inline">
+										<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+										<button class="btn-search"></button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<a class="item-cart lengkeng" href="cart.html" title="Giỏ hàng">
+									<span class="number-count">3</span>
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip2)">
+										<path d="M9.07812 18.1018H23.8987C24.2657 18.1018 24.5876 17.8591 24.6869 17.5066L27.9684 6.02203C28.0389 5.77444 27.9906 5.50848 27.8353 5.30276C27.6798 5.09769 27.438 4.97656 27.1799 4.97656H7.18436L6.59796 2.33789C6.51465 1.96213 6.1814 1.69531 5.79688 1.69531H0.820312C0.367004 1.69531 0 2.06232 0 2.51562C0 2.96915 0.367004 3.33594 0.820312 3.33594H5.13849L8.1008 16.666C7.22922 17.045 6.61719 17.9125 6.61719 18.9221C6.61719 20.279 7.72119 21.383 9.07812 21.383H23.8987C24.3522 21.383 24.719 21.0162 24.719 20.5627C24.719 20.1094 24.3522 19.7424 23.8987 19.7424H9.07812C8.62631 19.7424 8.25781 19.3748 8.25781 18.9221C8.25781 18.4694 8.62631 18.1018 9.07812 18.1018Z" fill="#109E4C"/>
+										<path d="M8.25781 23.8438C8.25781 25.2009 9.36182 26.3047 10.719 26.3047C12.0759 26.3047 13.1799 25.2009 13.1799 23.8438C13.1799 22.4868 12.0759 21.3828 10.719 21.3828C9.36182 21.3828 8.25781 22.4868 8.25781 23.8438Z" fill="#109E4C"/>
+										<path d="M19.7971 23.8438C19.7971 25.2009 20.9011 26.3047 22.2581 26.3047C23.6152 26.3047 24.719 25.2009 24.719 23.8438C24.719 22.4868 23.6152 21.3828 22.2581 21.3828C20.9011 21.3828 19.7971 22.4868 19.7971 23.8438Z" fill="#109E4C"/>
+										</g>
+										<defs>
+										<clipPath id="clip2">
+										<rect width="28" height="28" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+	<main class="main" role="main">
+
+
+
+
+		<div class="section-breadcrumb clearfix">
+			<div class="container clearfix">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+						<li class="breadcrumb-item active" aria-current="page">Nông sản Trình Nhi</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+
+		<section class="booth-about-b2b clearfix">
+			<div class="container clearfix">
+				<div class="booth-about-inner">
+					<div class="box-title">
+						<h1 class="title">CÔNG TY TNHH SẢN XUẤT – CUNG ỨNG VẬT TƯ NÔNG NGHIỆP XANH</h1>
+					</div>
+					<div class="wrap-content">
+						<div class="about-col-left">
+
+							<div class="b2b-preview">
+								<!-- Start - show case default -->
+									<div class="swiper-post-detail-horizontal clearfix">
+
+										<div class="swiper-container gallery-top" id="images_pro">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+												<div class="swiper-slide">
+													<a class="single-gl-item" href="https://www.youtube.com/watch?v=yltlJEdSAHw" data-src="https://www.youtube.com/watch?v=yltlJEdSAHw" title="Đất mặt tiền đường Nam Hòa, quận 9">
+														<img src="https://i.ytimg.com/vi/yltlJEdSAHw/hqdefault.jpg" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+													</a>
+												</div>
+											</div>
+											<!-- Add Arrows -->
+											<div class="swiper-arrow arrow-right swiper-btn-next-gallery-top"></div>
+											<div class="swiper-arrow arrow-left swiper-btn-prev-gallery-top"></div>
+										</div>
+										<div class="swiper-container gallery-thumbs">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item" style="background-image:url(http://via.placeholder.com/75x75.jpg/5B8C51/fff)"></div>
+												</div>
+												<div class="swiper-slide">
+													<div class="single-gl-item show-video" style="background-image:url(https://i.ytimg.com/vi/yltlJEdSAHw/hqdefault.jpg)"></div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								<!-- End - show case default -->
+
+
+								<!-- Start - show case only image -->
+									<div class="swiper-post-detail clearfix" style="display: none;">
+										<div class="case-1-image" id="images_pro">
+											<a class="single-gl-item" href="http://via.placeholder.com/560x560.jpg/5B8C51/fff" title="Đất mặt tiền đường Nam Hòa, quận 9">
+												<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+											</a>
+										</div>
+									</div>
+								<!-- End - show case only image -->
+
+
+								<!-- Start - show case no image -->
+									<div class="swiper-post-detail clearfix" style="display: none;">
+										<div class="case-no-image">
+											<div class="single-gl-item">
+												<img src="http://via.placeholder.com/560x560.jpg/5B8C51/fff" alt="Đất mặt tiền đường Nam Hòa, quận 9">
+											</div>
+										</div>
+									</div>
+								<!-- End - show case no image -->
+							</div>
+
+						</div>
+						<div class="about-col-right">
+							<h2 class="title-box">Thông tin cơ bản</h2>
+							<div class="list-item-info">
+								<div class="item-info">
+									<div class="item-label">Loại hình kinh doanh:</div>
+									<div class="item-value">Nhà sản xuất, Công ty Thương mại</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Sản phẩm/Dich vụ:</div>
+									<div class="item-value">Thương Mại tổng hợp</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Vị trí:</div>
+									<div class="item-value">Việt Nam</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Năm thành lập:</div>
+									<div class="item-value">1999</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Năm bắt đầu sản xuất:</div>
+									<div class="item-value">2010</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Số nhân sự:</div>
+									<div class="item-value">+1500</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Tổng doanh thu (năm ngoái):</div>
+									<div class="item-value">103 tỷ</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Thị trường chính:</div>
+									<div class="item-value">Châu Á</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Chứng nhận:</div>
+									<div class="item-value">Iso 9001</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Thời gian chuẩn bị (trung bình):</div>
+									<div class="item-value">30 ngày</div>
+								</div>
+							</div>
+
+							<br>
+							<hr/>
+
+							<div class="video-content-desc check_height" id="">
+								<h2 class="title-box">Hồ sơ công ty</h2>
+								<p>Kuan Giữ Gìn Sức Khỏe Sinh Thái Công Viên tại Malaysia, Kuan Giữ Gìn Sức Khỏe Sinh Thái Công Viên là một đầu tiên-of-của nó-kind của con chim làm tổ sinh thái công viên, thành lập vào năm với du lịch sinh thái như của nó tiểu sứ mệnh và khách quan. do đó, chúng tôi hoan nghênh khách du lịch, nhà nghiên cứu...</p>
+
+								<p>CÔNG TY TNHH SẢN XUẤT – CUNG ỨNG VẬT TƯ NÔNG NGHIỆP XANH (GAPRO VIETNAM) là Doanh nghiệp chuyên kinh doanh các mặt hàng nguyên liệu và vật tư phục vụ cho sản xuất Phân bón và Thức ăn Chăn nuôi.</p>
+
+								<p>Với đội ngũ CBCNV nhiều kinh nghiệm, ngành nghề kinh doanh chuyên môn hóa cao cùng với mong muốn đóng góp cho nền nông nghiệp Việt Nam ngày càng phát triển bền vững</p>
+
+								<p>CÔNG TY TNHH SẢN XUẤT – CUNG ỨNG VẬT TƯ NÔNG NGHIỆP XANH (GAPRO VIETNAM) là Doanh nghiệp chuyên kinh doanh các mặt hàng nguyên liệu và vật tư phục vụ cho sản xuất Phân bón và Thức ăn Chăn nuôi.</p>
+
+								<p>Với đội ngũ CBCNV nhiều kinh nghiệm, ngành nghề kinh doanh chuyên môn hóa cao cùng với mong muốn đóng góp cho nền nông nghiệp Việt Nam ngày càng phát triển bền vững</p>
+							</div>
+
+							<hr/>
+
+							<h2 class="title-box clearfix">Năng lực sản xuất</h2>
+							<div class="list-item-info">
+								<div class="item-info">
+									<div class="item-label">Quy mô Nhà máy:</div> 
+									<div class="item-value">Nhà sản xuất, Công ty Thương mại</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Địa điểm Nhà máy:</div> 
+									<div class="item-value">Thương Mại tổng hợp</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Số lượng Dây chuyền Sản xuất:</div> 
+									<div class="item-value">Việt Nam</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Sản xuất theo Hợp đồng:</div> 
+									<div class="item-value">1999</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Giá trị Đầu ra Hàng năm:</div> 
+									<div class="item-value">2010</div>
+								</div>
+							</div>
+							<br>
+							<hr/>
+
+							<h2 class="title-box clearfix">Năng lực thương mại</h2>
+								<table class="table table-responsives">
+									<thead>
+										<tr>
+											<th>Thị trường Chính</th>
+											<th>Tổng Doanh thu (%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Tây Âu</td>
+											<td>81.37%</td>
+										</tr>
+										<tr>
+											<td>Đông Nam Á</td>
+											<td>11.39%</td>
+										</tr>
+										<tr>
+											<td>Bắc Mỹ</td>
+											<td>7.24%</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="list-item-info">
+									<div class="item-info">
+										<div class="item-label">Tổng Khối lượng Bán hàng Hàng năm:</div>
+										<div class="item-value">US$10 Million - US$50 Million</div>
+									</div>
+									<div class="item-info">
+										<div class="item-label">Tỷ lệ Phần trăm Xuất khẩu:</div>
+										<div class="item-value">81% - 90%</div>
+									</div>
+								</div>
+
+							<br>
+							<hr/>
+
+							<h2 class="title-box clearfix">Điều khoản Kinh doanh</h2>
+							<div class="list-item-info">
+								<div class="item-info">
+									<div class="item-label">Điều khoản Giao hàng Được chấp nhận:</div>
+									<div class="item-value">FOB, CIF, EXW, DDP, DDU</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Tiền tệ Thanh toán Được chấp nhận:</div>
+									<div class="item-value">USD, EUR</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Loại hình Thanh toán Được chấp nhận:</div>
+									<div class="item-value">T/T, L/C</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Cảng Gần nhất:</div>
+									<div class="item-value">Sihanoukville (Cambodia), Manila (Philippines), HoChiMinh (Vietnam)</div>
+								</div>
+							</div>
+
+
+
+							<br>
+							<hr/>
+
+							<h2 class="title-box clearfix">Khả năng Giao dịch</h2>
+							<div class="list-item-info">
+								<div class="item-info">
+									<div class="item-label">Số lượng Nhân viên trong Phòng Thương mại:</div>
+									<div class="item-value">21-50 People</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Thời gian Chuẩn bị Trung bình:</div>
+									<div class="item-value">60 ngày</div>
+								</div>
+								<div class="item-info">
+									<div class="item-label">Phương thức Xuất khẩu:</div>
+									<div class="item-value">
+										<p>Có Giấy phép Xuất khẩu riêng</p>
+										<p>Mã số Giấy phép Xuất khẩu: 70541649</p>
+										<p>Tên Công ty Xuất khẩu: Medtecs Taiwan Corporation</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="schedule clearfix">
+			<div class="container clearfix">
+				<div class="schedule_box" id="schedule_box_01">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<p>Hiện tại đang có ngày để bạn lựa chọn</p>
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper" id="library_wrapper_schedule">
+											<div class="swiper-wrapper">
+
+
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">12/05/2020</span>
+															<span class="item-schedule_timeframe">4 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">15/05/2020</span>
+															<span class="item-schedule_timeframe">2 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">18/05/2020</span>
+															<span class="item-schedule_timeframe">6 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">20/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+
+
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-prev-schedule" title="Previous"></div>
+										<div class="swiper-button-next-schedule" title="Next"></div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<button type="button" class="btn-register" data-bs-toggle="modal" data-bs-target="#seminorModal">
+											Đăng ký lịch hẹn
+										</button>
+
+										<!-- <button type="button" class="btn-register registered" data-bs-toggle="modal" data-bs-target="#seminorModal">
+											Đăng ký ngay
+										</button> -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<section class="section-contact-booth-detail clearfix">
+			<div class="container clearfix">
+				<div class="contact-inner">
+					<div class="contact-box-title">
+						<h2 class="title-name">Liên hệ gian hàng</h2>
+					</div>
+					<div class="col-left">
+						<h2 class="contact-title"><span>Thông tin về gian hàng</span></h2>
+
+						<div class="contact-info">
+							<ul>
+								<li>
+									<span class="box-icon"><i class="fas fa-home"></i></span> 
+									<span class="box-label">Địa chỉ:</span>
+									<span class="box-value">Tầng 4 Tòa Nhà FPT Cầu Giấy, Phố Duy Tân, P. Dịch Vọng Hậu, Q. Cầu Giấy, Hà Nội​</span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-phone-volume"></i></span> 
+									<span class="box-label">Số điện thoại:</span>
+									<span class="box-value"><a href="tel:0979843527" title="">0979 843 527</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-envelope"></i></span> 
+									<span class="box-label">Email:</span>
+									<span class="box-value"><a href="mailTo:abc@gmail.com" title="">abc@gmail.com</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fab fa-facebook-f"></i></span> 
+									<span class="box-label">Facebook:</span>
+									<span class="box-value"><a href="https://fb.me/anhtuan.le.10888" target="_blank" title="">https://fb.me/anhtuan.le.10888</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-store"></i></span> 
+									<span class="box-label">Website:</span>
+									<span class="box-value"><a href="https://shop.vnexpress.net" target="_blank" title="">https://shop.vnexpress.net</a></span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-right">
+
+						<div class="contact-form">
+							<form action="" method="post" class="form-horizontal">
+								<fieldset>
+
+									<!-- Form Name -->
+									<legend class="form-title">Liên hệ gian hàng</legend>
+
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_name" class="col-sm-3 col-form-label">Họ tên:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" name="" id="frm_contact_name" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_adress" class="col-sm-3 col-form-label">Địa chỉ:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" name="" id="frm_contact_adress" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_email" class="col-sm-3 col-form-label">Email:</label>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" name="" id="frm_contact_email" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_content" class="col-sm-3 col-form-label">Nội dung:</label>
+										<div class="col-sm-9">
+											<textarea class="form-control" name="" id="frm_contact_content" rows="3" required></textarea>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label"></label>
+										<div class="col-sm-9">
+											<button type="submit" class="btn btn-submit">Gửi</button>
+										</div>
+									</div>
+
+								</fieldset>
+								
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- Start box quảng cáo -->
+		<section class="ads-fluid text-center clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="ads-fluid-inner">
+
+						<!-- google ads embed this here -->
+						<img src="../images/agriculture/ads.jpg" alt="">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End box quảng cáo -->
+
+
+
+	</main>
+	
+
+
+	<footer class="footer footer_area clearfix" id="footer_area">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		
+
+		<!-- Modal -->
+		<div class="modal modal-seminor fade" id="seminorModal" tabindex="-1" role="dialog" aria-labelledby="seminorModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">DOANH NGHIỆP ĐĂNG KÝ LỊCH HẸN</h5>
+						<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							
+							<p>Bạn vui lòng nhập đầy đủ thông tin bên dưới để đăng ký tham gia tư vấn</p>
+							<form>
+								<div class="form-group row">
+									<label for="input_name" class="col-sm-4 col-form-label">Họ tên</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="input_name" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_email" class="col-sm-4 col-form-label">Email</label>
+									<div class="col-sm-8">
+										<input type="email" class="form-control" id="input_email" required>
+										<span class="help-block">Thông báo chưa hợp lệ</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_phone" class="col-sm-4 col-form-label">Số điện thoại</label>
+									<div class="col-sm-8">
+										<input type="number" class="form-control" id="input_phone" required>
+										<span class="help-block">Thông báo chưa hợp lệ</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_sex" class="col-sm-4 col-form-label">Giới tính</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_sex" required>
+											<option>Nam</option>
+											<option>Nữ</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_yearold" class="col-sm-4 col-form-label">Tuổi</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_yearold" required>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+											<option value="32">32</option>
+											<option value="33">33</option>
+											<option value="34">34</option>
+											<option value="35">35</option>
+											<option value="36">36</option>
+											<option value="37">37</option>
+											<option value="38">38</option>
+											<option value="39">39</option>
+											<option value="40">40</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_school" class="col-sm-4 col-form-label">Trường đang học</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="input_school" placeholder="Đại học FPT" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_majors" class="col-sm-4 col-form-label">Ngành mong muốn</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_majors" required>
+											<option>Công nghệ thông tin</option>
+											<option>Quản lý khách sạn</option>
+											<option>Kinh tế và Kinh doanh</option>
+											<option>Du lịch và Lữ hành</option>
+										</select>
+										<div class="invalid-feedback">Example invalid custom select feedback</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_time" class="col-sm-4 col-form-label">Thời gian tư vấn</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_time" required>
+											<option>12/4/2020</option>
+											<option>13/4/2020</option>
+											<option>14/4/2020</option>
+											<option>15/4/2020</option>
+											<option>16/4/2020</option>
+										</select>
+
+										<div class="wrap-options-hour">
+											<div class="wrap-options-hour-list">
+
+												<div class="item-option item-option-03">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_01" value="8:00 - 8:45" disabled>
+													<label for="input_hour_01">
+														<span>8:00 - 8:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_02" value="9:00 - 9:45" checked="checked">
+													<label for="input_hour_02">
+														<span>9:00 - 9:45</span>
+													</label>
+												</div>
+												<div class="item-option item-option-02">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_03" value="10:00 - 10:45">
+													<label for="input_hour_03">
+														<span>10:00 - 10:45</span>
+													</label>
+												</div>
+												<div class="item-option item-option-02">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_04" value="10:00 - 10:45">
+													<label for="input_hour_04">
+														<span>11:00 - 11:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_05" value="10:00 - 10:45" disabled>
+													<label for="input_hour_05">
+														<span>12:00 - 12:45</span>
+													</label>
+												</div>
+
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_06" value="10:00 - 10:45" disabled>
+													<label for="input_hour_06">
+														<span>13:00 - 13:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_07" value="10:00 - 10:45">
+													<label for="input_hour_07">
+														<span>14:00 - 14:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_08" value="10:00 - 10:45" disabled>
+													<label for="input_hour_08">
+														<span>15:00 - 15:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_09" value="10:00 - 10:45" disabled>
+													<label for="input_hour_09">
+														<span>16:00 - 16:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_10" value="10:00 - 10:45">
+													<label for="input_hour_10">
+														<span>17:00 - 17:45</span>
+													</label>
+												</div>
+
+											</div>
+											<div class="wrap-options-hour-note">
+												<div class="item-note item-note-01">
+													<span></span><span>Khung giờ bạn chọn</span>
+												</div>
+												<div class="item-note item-note-02">
+													<span></span><span>Khung giờ trống</span>
+												</div>
+												<div class="item-note item-note-03">
+													<span></span><span>Khung giờ đầy</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_file" class="col-sm-4 col-form-label">File đính kèm:</label>
+									<div class="col-sm-8">
+										<p>Bạn hãy gửi trước hồ sơ của bạn để trường có thể xem trước & tư vấn chính xác cho bạn</p>
+										<div class="wrap-upload-file">
+											<input type="file" class="input-file-upload" name="file" id="input_file" multiple accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*" onchange="javascript:updateList()">
+											<label class="input-file-label" for="input_file">
+												<span><i class="fal fa-upload"></i></span>
+												<span>Kéo thả tập tin vào đây hoặc chọn tập tin để tải lên</span>
+											</label>
+											<div id="fileList">
+												<ul>
+													<li><span class="file-name">icon-cao-dang.png</span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+													<li><span class="file-name">icon-cao-dang.png<span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+													<li><span class="file-name">icon-dai-hoc.png<span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+												</ul>
+											</div>
+											<div class="invalid-feedback">Thông báo chưa hợp lệ</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="input_content" class="col-sm-4 col-form-label">Nội dung cần tư vấn:</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" id="input_content" rows="4" placeholder=""></textarea>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label"></label>
+									<div class="col-sm-8">
+										<button type="submit" class="btn btn-primary">ĐĂNG KÝ TƯ VẤN</button>
+									</div>
+								</div>
+							</form>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Modal -->
+		<div class="modal modal-seminor fade" id="seminorModal2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="seminorModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<p>Bạn đã đăng ký Tư vấn với đại diện trường <strong>California Institute of Technology</strong> vào thời gian <strong>14:30 - 17:30 | 12/4/2020</strong></p>
+								<p>Chúng tôi sẽ liên lạc với bạn qua email tieudinhtrung@gmail.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal modal-seminor fade" id="seminorModal3" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="seminorModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<p>Buổi tư vấn đang diễn ra. Bạn có thể sẽ phải chờ do chưa đặt lịch trước.</p>
+								<div class="col-md-12 text-center"><button type="submit" class="btn btn-primary">THAM GIA NGAY</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+		<script defer>
+			$(document).ready(function () {
+				$("#countdown_time").countdown("2021/06/10 00:07:00", function(event) {
+					$(".time_day").text(
+						event.strftime('%D')
+					);
+					$(".time_hour").text(
+						event.strftime('%H')
+					);
+					$(".time_minute").text(
+						event.strftime('%M')
+					);
+					$(".time_seconds").text(
+						event.strftime('%S')
+					);
+				});
+			});
+
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+					// Start update slide pc - new
+					var galleryThumbs = new Swiper('.gallery-thumbs', {
+						spaceBetween: 0,
+						slidesPerView: 4,
+						watchOverflow: true,
+						freeMode: true,
+						loop: false,
+						loopedSlides: 4,
+						watchSlidesVisibility: true,
+						watchSlidesProgress: true,
+					});
+					var galleryTop = new Swiper('.gallery-top', {
+						watchOverflow: true,
+						spaceBetween: 4,
+						loop: false,
+						loopedSlides: 4,
+						navigation: {
+							nextEl: '.swiper-btn-next-gallery-top',
+							prevEl: '.swiper-btn-prev-gallery-top',
+						},
+						thumbs: {
+							swiper: galleryThumbs
+						}
+					});
+					// End update slide pc - new
+					$(".single-gallery .single-gl-item").click(function(){
+						return false;
+					});
+
+
+					// $(".single-gallery .single-gl-item img").click(function() {
+					//	 $(".single-pro-img img").attr("src", $(this).attr("src"));
+					// });
+					$("#images_pro").lightGallery({
+						selector: '.single-gl-item',
+						thumbnail:true,
+						animateThumb: false,
+						showThumbByDefault: false,
+						autoplayControls: false,
+						download: false,
+						youtubePlayerParams: {
+							modestbranding: 1,
+							showinfo: 0,
+							rel: 0,
+							controls: 1,
+							autoplay: 1
+						},
+						share: false
+					});
+
+			})
+		</script>
+	
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

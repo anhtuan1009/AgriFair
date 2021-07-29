@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header header-scroll">
+		<div class="header-top">
+			<div class="container clearfix">
+				<div class="menu-top-inner">
+					<div class="group-btn">
+						<div class="btn-back">
+							<a href="https://vnexpress.net" title="Quay lại VnExpress"><i class="fal fa-arrow-left"></i> Quay lại VnExpress</a>
+						</div>
+						<div class="list-item-socail">
+							<p>Chia sẻ <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+						<div class="box-user-login">
+
+
+							<!-- Start user chưa đăng nhập -->
+								<!-- <div class="user-not-logged-in">
+									<span class="btn-sign-in">Đăng nhập</span>
+								</div> -->
+							<!-- End user chưa đăng nhập -->
+
+							<!-- Start user đã đăng nhập -->
+								<div class="user-logged">
+									<div class="user-name">
+										<span class="avata">A</span>
+										<span class="name-value">Anh Tuấn</span>
+										<div class="dropdown-user" id="dropdown-user">
+											<ul class="myvne_user_status">
+												<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+												<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+												<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="user-notify">
+										<a href="" title="Bạn có 2 thông báo mới">
+											<i class="fas fa-bell"></i>
+											<span class="notify-number">2</span>
+										</a>
+									</div>
+								</div>
+							<!-- End user đã đăng nhập -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container clearfix">
+						
+				<div class="header-left">
+					<a class="logo" href="index.html" title="">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="header-right">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Gian hàng</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="3d-virtual-reality.html" title="">3D Virtual Reality</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+							<li>
+								<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+								<form class="form-search-top" id="frm_search" action="search.html" method="post">
+									<div class="form-group-inline">
+										<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+										<button class="btn-search"></button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<a class="item-cart lengkeng" href="cart.html" title="Giỏ hàng">
+									<span class="number-count">3</span>
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip2)">
+										<path d="M9.07812 18.1018H23.8987C24.2657 18.1018 24.5876 17.8591 24.6869 17.5066L27.9684 6.02203C28.0389 5.77444 27.9906 5.50848 27.8353 5.30276C27.6798 5.09769 27.438 4.97656 27.1799 4.97656H7.18436L6.59796 2.33789C6.51465 1.96213 6.1814 1.69531 5.79688 1.69531H0.820312C0.367004 1.69531 0 2.06232 0 2.51562C0 2.96915 0.367004 3.33594 0.820312 3.33594H5.13849L8.1008 16.666C7.22922 17.045 6.61719 17.9125 6.61719 18.9221C6.61719 20.279 7.72119 21.383 9.07812 21.383H23.8987C24.3522 21.383 24.719 21.0162 24.719 20.5627C24.719 20.1094 24.3522 19.7424 23.8987 19.7424H9.07812C8.62631 19.7424 8.25781 19.3748 8.25781 18.9221C8.25781 18.4694 8.62631 18.1018 9.07812 18.1018Z" fill="#109E4C"/>
+										<path d="M8.25781 23.8438C8.25781 25.2009 9.36182 26.3047 10.719 26.3047C12.0759 26.3047 13.1799 25.2009 13.1799 23.8438C13.1799 22.4868 12.0759 21.3828 10.719 21.3828C9.36182 21.3828 8.25781 22.4868 8.25781 23.8438Z" fill="#109E4C"/>
+										<path d="M19.7971 23.8438C19.7971 25.2009 20.9011 26.3047 22.2581 26.3047C23.6152 26.3047 24.719 25.2009 24.719 23.8438C24.719 22.4868 23.6152 21.3828 22.2581 21.3828C20.9011 21.3828 19.7971 22.4868 19.7971 23.8438Z" fill="#109E4C"/>
+										</g>
+										<defs>
+										<clipPath id="clip2">
+										<rect width="28" height="28" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+	<main class="main" role="main">
+		<div class="section-breadcrumb clearfix">
+			<div class="container clearfix">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+						<li class="breadcrumb-item active" aria-current="page">Livestream - Chi phí logistics cho nông sản Việt - thách thức cạnh tranh trên thị trường quốc tế</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+		<section class="section-video-livestream-show">
+			<div class="container clearfix">
+				<div class="video-inner">
+					<div class="video-box-list">
+
+						<div class="video-list">
+
+							<div class="video-item video--live">
+								<div class="item-inner">
+									<div class="wrap-image">
+										<a href="live-stream-detail.html" title="">
+											
+											<div class="embed-responsive embed-responsive-16by9">
+												<iframe class="embed-responsive-item" width="1280" height="720" src="https://www.youtube.com/embed/pEF1IzHVdXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											</div>
+											<!-- <div class="icon-video"></div> -->
+										</a>
+									</div>
+									<div class="wrap-info">
+										<div class="row-1">
+											<div class="info-time">
+												<div class="live-time">Live</div>
+											</div>
+											<div class="info-txt">Nông nghiệp công nghệ</div>
+										</div>
+										<h3 class="item-title">
+											Chi phí logistics cho nông sản Việt - thách thức cạnh tranh trên thị trường quốc tế
+										</h3>
+										<div class="item-description">
+											Với chủ đề “Chuyển đổi số nền nông nghiệp đảm bảo vai trò trụ đỡ của nền kinh tế”, Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .video-item -->
+
+						</div><!-- End .video-list -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section class="booth-about-page-livetream clearfix">
+			<div class="container clearfix">
+				<div class="booth-about-inner">
+					<div class="wrap-content">
+						<div class="wrap-booth-first" id="">
+							<div class="box-title">
+								<img class="logo" src="images/logo-seller-01.png" alt="">
+								<h1 class="title">CÔNG TY TNHH SẢN XUẤT – CUNG ỨNG VẬT TƯ NÔNG NGHIỆP XANH</h1>
+							</div>
+						</div>
+						<div class="wrap-booth-second check_height">
+							<p>Với chủ đề “Chuyển đổi số nền nông nghiệp đảm bảo vai trò trụ đỡ của nền kinh tế”,</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+							<p>Diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có
+							quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp
+							của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt
+							động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên
+							quan.</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+
+
+
+		<div class="wrapper-product-category">
+
+			<div class="container">
+				<div class="wrapper-content">
+
+					<!-- Start col-page-left -->
+					<aside class="col-page-left">
+
+						<div class="module-category-list">
+							<h2 class="title-module category-curent">Danh mục</h2>
+
+							<div class="list-item-cate" id="wrap_scroll_cate">
+								<a href="category-lv-2.html" class="item-category-child" title="">Nguyên liệu</a>
+								<a href="category-lv-2.html" class="item-category-child active" title="">Cung cấp nông sản</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Chăn nuôi</a>
+
+									<!-- <a href="#" class="item-category-child lv2" title="">Danh mục level 2</a>
+									<a href="#" class="item-category-child lv2" title="">Danh mục level 2</a>
+									<a href="#" class="item-category-child lv2" title="">Danh mục level 2</a>
+										<a href="#" class="item-category-child lv3 active" title="">Danh mục level 3</a>
+										<a href="#" class="item-category-child lv3" title="">Danh mục level 3</a>
+										<a href="#" class="item-category-child lv3" title="">Danh mục level 3</a>
+										<a href="#" class="item-category-child lv3" title="">Danh mục level 3</a> -->
+
+								<a href="category-lv-2.html" class="item-category-child" title="">Trồng trọt</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Ngũ cốc</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Nguyên liệu</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Nguyên liệu</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Cung cấp nông sản</a>
+								<a href="category-lv-2.html" class="item-category-child" title="">Chăn nuôi</a>
+							</div>
+
+						</div>
+
+						<div class="module-price-filter">
+							<h2 class="title-module" data-bs-toggle="collapse" data-bs-target="#khoang_gia" aria-expanded="true">Khoảng giá(VNĐ)</h2>
+							<div class="collapse show" id="khoang_gia">
+								<form action="" method="get" class="form-vertical form-price-filter">
+
+									<div class="box clearfix">
+										<div class="search_prices search_prices_1">
+											<div id="slider-range1" class="box"></div>
+											<input type="text" id="amount_quickly" class="input-view" readonly value="" name="price">
+											<input type="hidden" id="amount_hidden_quickly" value="" name="amount_hidden_quickly">
+											<script>
+												window.onload = function() {
+													if (typeof jQuery != 'undefined') { 
+															$("#slider-range1").slider({
+																step: 100000,
+																range: true,
+																min: 0,
+																max: 30000000,
+																values: [0, 10000000],
+																slide: function(event, ui) {
+																	$("#amount_quickly").val((ui.values[0]).toLocaleString('vi',{style:'currency',currency:'VND'}) + " - " + (ui.values[1]).toLocaleString('vi',{style:'currency',currency:'VND'}));
+																	$("#amount_hidden_quickly").val(ui.values[0]+ "-" + ui.values[1]);
+																}
+															});
+															$("#amount_quickly").val($("#slider-range1").slider("values", 0).toLocaleString('vi',{style:'currency',currency:'VND'}) + " - " + $("#slider-range1").slider("values", 1).toLocaleString('vi',{style:'currency',currency:'VND'}));
+															$("#amount_hidden_quickly").val($("#slider-range1").slider("values", 0) +"-" + $("#slider-range1").slider("values", 1));
+															
+													} else {
+														console.log("jQuery library is not found!");
+													}
+												}
+											</script>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="radio">
+											<label for="radios-0">
+											  	<input type="radio" name="radios" id="radios-0" value="1">
+											  	< 3.000.000đ
+											</label>
+										</div>
+										<div class="radio">
+											<label for="radios-1">
+											  	<input type="radio" name="radios" id="radios-1" value="2">
+											  	3.000.000 - 5.000.000đ
+											</label>
+										</div>
+										<div class="radio">
+											<label for="radios-2">
+											  	<input type="radio" name="radios" id="radios-2" value="3">
+											  	5.000.000đ - 10.000.000đ
+											</label>
+										</div>
+										<div class="radio">
+											<label for="radios-3">
+											  	<input type="radio" name="radios" id="radios-3" value="4">
+											  	10.000.000 - 20.000.000đ
+											</label>
+										</div>
+										<div class="radio">
+											<label for="radios-4">
+											  	<input type="radio" name="radios" id="radios-4" value="5">
+											  	> 20.000.000đ
+											</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+
+					</aside>
+					<!-- End col-page-left -->
+
+					<!-- Start col-page-primary -->
+					<main class="col-page-primary">
+
+						<section class="wrapper-list-outer clearfix">
+							<div class="box box-title-page">
+								<div class="col-left-title">
+									<h2 class="box title-page mg0">Cung cấp nông sản</h2> <span class="count-items">: 422 sản phẩm</span>
+								</div>
+								<div class="col-right-title">
+									<div class="box-sort-product">
+									  	<label for="sel1">Sắp xếp theo : </label>
+									  	<select class="form-control" id="sel1">
+											<option>Mua nhiều nhất</option>
+											<option>Giá sản phẩm tăng dần</option>
+											<option>Giá sản phẩm giảm dần</option>
+											<option>Khuyến mại tăng dần</option>
+											<option>Khuyến mại giảm dần</option>
+									  	</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="wrapper-list clearfix">
+								<div class="list-pro clearfix">
+
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+											<span class="gift-label"></span>
+											<div class="tag-ship">
+												<div class="tag-ship__label">HỖ TRỢ</div>
+												<div class="tag-ship__value">
+													<span class="txt-phiship">Phí ship</span>
+													<span class="num-phiship">120<sup>k</sup></span>
+												</div>
+											</div>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url"><span class="icon-deal-hot">Deal Hot</span>Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-02.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+											<span class="gift-label"></span>
+											<span class="freeship-label"></span>
+											<div class="tag-ship">
+												<div class="tag-ship__label">FREESHIP</div>
+												<div class="tag-ship__value">Toàn quốc</div>
+											</div>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url"><span class="icon-deal-hot">Deal Hot</span>Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-03.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-04.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+											<span class="globe-hethang"></span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+									<div class="item-pro" itemscope itemtype="http://schema.org/Product">
+										<div class="box-image">
+											<a href="product-detail.html" title="" class="box" itemprop="url">
+												<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+											</a>
+											<span class="sale-label sale-right">-30%</span>
+										</div>
+										<div class="box-title-item">
+											<span class="cate-name">Ngũ cốc</span>
+											<h3 class="box mg0" itemprop="name">
+												<a href="product-detail.html" class="box title-post-item" title="" itemprop="url">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+											</h3>
+											<div class="box-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+												<p class="box">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND"/>
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-30%</span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End item product -->
+
+								</div>
+
+								<a class="btn-viewall" href="#" title="Xem thêm">Xem thêm</a>
+								<div class="box-pagination clearfix">
+									<ul class="pagination pagination-lg">
+										<li><a href="#"><i class="fal fa-angle-left"></i></a></li>
+										<li><a href="#">4</a></li>
+										<li><a href="#">5</a></li>
+										<li><a href="#" class="active">6</a></li>
+										<li><a href="#">7</a></li>
+										<li><a href="#">...</a></li>
+										<li><a href="#">361</a></li>
+										<li><a href="#"><i class="fal fa-angle-right"></i></a></li>
+									</ul>
+								</div>
+
+							</div>
+						</section>
+
+
+					</main>
+					<!-- End col-page-primary -->
+				</div>
+			</div>
+
+		</div>
+
+
+
+
+		<section class="section-contact-booth-detail clearfix">
+			<div class="container clearfix">
+				<div class="contact-inner">
+					<div class="contact-box-title">
+						<h2 class="title-name">Liên hệ gian hàng</h2>
+					</div>
+					<div class="col-left">
+						<h2 class="contact-title"><span>Thông tin về gian hàng</span></h2>
+
+						<div class="contact-info">
+							<ul>
+								<li>
+									<span class="box-icon"><i class="fas fa-home"></i></span> 
+									<span class="box-label">Địa chỉ:</span>
+									<span class="box-value">Tầng 4 Tòa Nhà FPT Cầu Giấy, Phố Duy Tân, P. Dịch Vọng Hậu, Q. Cầu Giấy, Hà Nội​</span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-phone-volume"></i></span> 
+									<span class="box-label">Số điện thoại:</span>
+									<span class="box-value"><a href="tel:0979843527" title="">0979 843 527</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-envelope"></i></span> 
+									<span class="box-label">Email:</span>
+									<span class="box-value"><a href="mailTo:abc@gmail.com" title="">abc@gmail.com</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fab fa-facebook-f"></i></span> 
+									<span class="box-label">Facebook:</span>
+									<span class="box-value"><a href="https://fb.me/anhtuan.le.10888" target="_blank" title="">https://fb.me/anhtuan.le.10888</a></span>
+								</li>
+								<li>
+									<span class="box-icon"><i class="fas fa-store"></i></span> 
+									<span class="box-label">Website:</span>
+									<span class="box-value"><a href="https://shop.vnexpress.net" target="_blank" title="">https://shop.vnexpress.net</a></span>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="col-right">
+
+						<div class="contact-form">
+							<form action="" method="post" class="form-horizontal">
+								<fieldset>
+
+									<!-- Form Name -->
+									<legend class="form-title">Liên hệ gian hàng</legend>
+
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_name" class="col-sm-3 col-form-label">Họ tên:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" name="" id="frm_contact_name" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_adress" class="col-sm-3 col-form-label">Địa chỉ:</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" name="" id="frm_contact_adress" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_email" class="col-sm-3 col-form-label">Email:</label>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" name="" id="frm_contact_email" required>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label for="frm_contact_content" class="col-sm-3 col-form-label">Nội dung:</label>
+										<div class="col-sm-9">
+											<textarea class="form-control" name="" id="frm_contact_content" rows="3" required></textarea>
+										</div>
+									</div>
+									<!-- Text input-->
+									<div class="form-group row">
+										<label class="col-sm-3 col-form-label"></label>
+										<div class="col-sm-9">
+											<button type="submit" class="btn btn-submit">Gửi</button>
+										</div>
+									</div>
+
+								</fieldset>
+								
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<!-- Start box quảng cáo -->
+		<section class="ads-fluid text-center clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="ads-fluid-inner">
+
+						<!-- google ads embed this here -->
+						<img src="images/ads.jpg" alt="">
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End box quảng cáo -->
+
+
+	</main>
+	
+
+
+	<footer class="footer footer_area clearfix" id="footer_area">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

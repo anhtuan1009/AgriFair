@@ -1,0 +1,3024 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header header-scroll">
+		<div class="header-top">
+			<div class="container clearfix">
+				<div class="menu-top-inner">
+					<div class="group-btn">
+						<div class="btn-back">
+							<a href="https://vnexpress.net" title="Quay lại VnExpress"><i class="fal fa-arrow-left"></i> Quay lại VnExpress</a>
+						</div>
+						<div class="list-item-socail">
+							<p>Chia sẻ <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+						<div class="box-user-login">
+
+
+							<!-- Start user chưa đăng nhập -->
+								<!-- <div class="user-not-logged-in">
+									<span class="btn-sign-in">Đăng nhập</span>
+								</div> -->
+							<!-- End user chưa đăng nhập -->
+
+							<!-- Start user đã đăng nhập -->
+								<div class="user-logged">
+									<div class="user-name">
+										<span class="avata">A</span>
+										<span class="name-value">Anh Tuấn</span>
+										<div class="dropdown-user" id="dropdown-user">
+											<ul class="myvne_user_status">
+												<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+												<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+												<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="user-notify">
+										<a href="" title="Bạn có 2 thông báo mới">
+											<i class="fas fa-bell"></i>
+											<span class="notify-number">2</span>
+										</a>
+									</div>
+								</div>
+							<!-- End user đã đăng nhập -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container clearfix">
+						
+				<div class="header-left">
+					<a class="logo" href="index.html" title="">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="header-right">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Gian hàng</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="3d-virtual-reality.html" title="">3D Virtual Reality</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+							<li>
+								<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+								<form class="form-search-top" id="frm_search" action="search.html" method="post">
+									<div class="form-group-inline">
+										<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+										<button class="btn-search"></button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<a class="item-cart lengkeng" href="cart.html" title="Giỏ hàng">
+									<span class="number-count">3</span>
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip2)">
+										<path d="M9.07812 18.1018H23.8987C24.2657 18.1018 24.5876 17.8591 24.6869 17.5066L27.9684 6.02203C28.0389 5.77444 27.9906 5.50848 27.8353 5.30276C27.6798 5.09769 27.438 4.97656 27.1799 4.97656H7.18436L6.59796 2.33789C6.51465 1.96213 6.1814 1.69531 5.79688 1.69531H0.820312C0.367004 1.69531 0 2.06232 0 2.51562C0 2.96915 0.367004 3.33594 0.820312 3.33594H5.13849L8.1008 16.666C7.22922 17.045 6.61719 17.9125 6.61719 18.9221C6.61719 20.279 7.72119 21.383 9.07812 21.383H23.8987C24.3522 21.383 24.719 21.0162 24.719 20.5627C24.719 20.1094 24.3522 19.7424 23.8987 19.7424H9.07812C8.62631 19.7424 8.25781 19.3748 8.25781 18.9221C8.25781 18.4694 8.62631 18.1018 9.07812 18.1018Z" fill="#109E4C"/>
+										<path d="M8.25781 23.8438C8.25781 25.2009 9.36182 26.3047 10.719 26.3047C12.0759 26.3047 13.1799 25.2009 13.1799 23.8438C13.1799 22.4868 12.0759 21.3828 10.719 21.3828C9.36182 21.3828 8.25781 22.4868 8.25781 23.8438Z" fill="#109E4C"/>
+										<path d="M19.7971 23.8438C19.7971 25.2009 20.9011 26.3047 22.2581 26.3047C23.6152 26.3047 24.719 25.2009 24.719 23.8438C24.719 22.4868 23.6152 21.3828 22.2581 21.3828C20.9011 21.3828 19.7971 22.4868 19.7971 23.8438Z" fill="#109E4C"/>
+										</g>
+										<defs>
+										<clipPath id="clip2">
+										<rect width="28" height="28" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+	<main class="main" role="main">
+
+
+
+		<section class="banner-top clearfix">
+			<div class="slide-home" id="slide_home" style="background-color: #000C24;background-image: url(images/banner-01.jpg);">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+
+											<div class="breadcrumb-event">
+												<a class="breadcrumb-item" href="#" title="Fair 2020">Fair 2020</a>
+												<span class="breadcrumb-item active">Agriculture Fair 2020</span>
+											</div>
+
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+
+											<div class="intro-countdown">
+												<div class="countdown-txt"><i class="fal fa-clock"></i> Thời gian diễn ra:</div>
+												<div class="countdown-value" id="countdown_time">
+													<div class="attr-time">
+														<span class="time-value time_day">00</span>
+														<span class="time-text">Ngày</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_hour">00</span>
+														<span class="time-text">Giờ</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_minute">00</span>
+														<span class="time-text">Phút</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_seconds">00</span>
+														<span class="time-text">Giây</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="box-right">
+										</div>
+
+										<a href="#" class="link-detail"></a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+										</div>
+										<div class="box-right">
+										</div>
+
+										<a href="#" class="link-detail"></a>
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+										</div>
+										<div class="box-right">
+										</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="container group-btn-slide">
+					<div class="swiper-pagination-slide-home"></div>
+					<!-- <div class="swiper-button-prev-slide-home"></div>
+					<div class="swiper-button-next-slide-home"></div> -->
+				</div>
+			</div>
+					
+		</section>
+
+
+
+		<section class="section-scholarship-03 clearfix">
+			<div class="container clearfix">
+				<div class="news-inner">
+					<div class="scholarship-box-title">
+					</div>
+					<div class="scholarship-box-content">
+						<div class="scholarship-box-list">
+
+							<ul class="nav nav-pills" id="pills-tab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline active" id="pills-timeline-1-tab" data-bs-toggle="pill" href="#pills-timeline-1" role="tab" aria-controls="pills-timeline-1" aria-selected="true">
+										<span class="time-date">01/09/2021</span>
+										<span class="title-item">Khai mạc hội trợ triển lãm nông nghiệp.</span>
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline" id="pills-timeline-2-tab" data-bs-toggle="pill" href="#pills-timeline-2" role="tab" aria-controls="pills-timeline-2" aria-selected="false">
+										<span class="time-date">13/09/2021</span>
+										<span class="title-item">Áp dụng công nghệ trong sản xuất nông nghiệp</span>
+									</a>
+								</li>
+							</ul>
+							<!-- <div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-timeline-1" role="tabpanel" aria-labelledby="pills-timeline-1-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Khai mạc hội trợ triển lãm nông nghiệp</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-timeline-2" role="tabpanel" aria-labelledby="pills-timeline-2-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Áp dụng công nghệ trong sản xuất nông nghiệp</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+
+		<section class="section-video-live-pc clearfix">
+			<div class="container clearfix">
+				<div class="video-inner">
+					<div class="video-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Livestream hội thảo</h2>
+							<p class="title-sub"></p>
+						</div>
+					</div>
+					<div class="video-box-content">
+
+						<div class="slide-video-livestream" id="slide_video_livestream">
+
+								<div class="swiper-slide">
+									<!-- 21:9 aspect ratio -->
+									<div class="embed-responsive embed-responsive-16by9">
+										<iframe id="ifrLarger" width="1280" height="720" src="https://www.youtube.com/embed/3JMToFAsWcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+									<p class="videoName live" id="captionVie">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</p>
+								</div>
+
+						</div>
+
+						<div class="list-thumbnai-video js_scroll_perfect">
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/3JMToFAsWcI" title="Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4" data-status="live">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://i.ytimg.com/vi_webp/3JMToFAsWcI/maxresdefault.webp" alt=""> 
+									</span>
+									<span class="video-title">Quốc hội Mỹ xác nhận Biden đắc cử Tổng thống Mỹ | VTV4</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net" data-status="">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+									</span>
+									<span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net" data-status="live">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+									</span>
+									<span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net" data-status="">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+									</span>
+									<span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net" data-status="live">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+									</span>
+									<span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcongdongvnexpress%2Fvideos%2F238755780561231%2F&show_text=0&autoplay=1&rel=0&showinfo=0" title="[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19 | VnExpress.net" data-status="live">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://iv.vnecdn.net/vnexpress/images/web/2019/04/18/live-thumb-default-8234-1554949750_500x300.jpg" alt=""> 
+									</span>
+									<span class="video-title">[Tọa đàm trực tuyến] Bài toán thuê mặt bằng văn phòng thời Covid-19</span>
+								</a>
+							</div>
+							<div class="item-video">
+								<a href="javascript:;" class="cliVeo" data-url="https://www.youtube.com/embed/5RubUIqyy6k" title="Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4 | VnExpress.net" data-status="">
+									<span class="video-image">
+										<img class="img-fluid img-responsive" src="https://i.ytimg.com/vi/5RubUIqyy6k/hqdefault.jpg?sqp=-oaymwEXCNACELwBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLApQ2FPz2UAgMStfoGSnr5-PqgTow" alt=""> 
+									</span>
+									<span class="video-title">Hà Nội cấp 2,5 triệu căn cước công dân gắn chip | VTV4</span>
+								</a>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="section-intro-home clearfix">
+			<div class="container clearfix">
+				<div class="intro-inner">
+					<div class="intro-box-title">
+						<h2 class="title-name">Nội dung chính</h2>
+						<p class="title-sub">
+							Với chủ đề “Chuyển đổi số nền nông nghiệp đảm bảo vai trò trụ đỡ của nền kinh tế”, diễn đàn Chuyển đổi số Nông nghiệp Việt Nam 2021 là diễn đàn kinh tế nông nghiệp có quy mô quốc gia, quốc tế, để thảo luận các vấn đề then chốt, chiến lược về nông nghiệp của Việt Nam đặt trong bối cảnh khu vực và thế giới. Diễn đàn là nơi diễn ra các hoạt động đối thoại, chính sách công tư giữa Chính phủ và khu vực tư nhân, cùng các bên liên quan.
+						</p>
+					</div>
+					<div class="intro-box-content">
+
+						<div class="col-item content-image">
+							<img src="images/intro_home.svg" alt="Chuyển đổi số nền nông nghiệp đảm bảo vai trò trụ đỡ của nền kinh tế">
+						</div>
+						<div class="col-item content-txt">
+							<h2><strong>Hoạt động chính</strong></h2>
+							<ul>
+								<li>05 Hội thảo chuyên đề thảo luận về những giải pháp và kịch bản chuyển đổi số cho Nông nghiệp Việt Nam trong thời đại mới </li>
+								<li>Triển lãm gian hàng </li>
+								<li>Phiên toàn thể: diễn ra các hoạt động ký kết nhằm xúc tiến thương mại giữa các bên</li>
+							</ul>
+						</div>
+						<div class="col-item content-txt">
+							<h2><strong>Mục đích của Diễn đàn</strong></h2>
+							<ul>
+								<li>Tổng kết báo cáo kết quả từ các phiên chuyên đề tổ chức trước đó</li>
+								<li>Bộ Ban Ngành đưa ra các phản hồi, giải pháp cụ thể</li>
+								<li>Tổng hợp các ý kiến từ phía doanh nghiệp</li>
+							</ul>	
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
+
+		<section class="section-team clearfix">
+			<div class="container clearfix">
+				<div class="team-inner">
+					<div class="team-box-title">
+						<h2 class="title-name">Diễn giả</h2>
+						<p class="title-sub">
+							Điều dễ dàng nhận thấy khi tiếp xúc qua các kênh tư vấn trực tuyến, qua điện thoại, nhân viên tư vấn của chúng tôi sẽ ...
+						</p>
+					</div>
+					<div class="team-box-list">
+
+						<div class="team-list" id="team_list">
+
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern1)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>1. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern2)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>2. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern3)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>3. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern4)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>4. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern5)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>5. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern6)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>6. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern7)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>7. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-team">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="javascript:void(0);" title="">
+											<svg width="245" height="286" viewBox="0 0 245 286" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M213.559 155.695L221.108 215.285C223.525 234.357 207.63 250.748 188.492 248.92L45.2483 235.231C19.5935 232.779 0.00475456 211.229 0.00475405 185.458L0.00475402 184.443L213.559 155.695Z" fill="#0BB451"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.4273 207.794L108.464 256.934C116.811 261.758 127.098 261.758 135.445 256.934L220.482 207.794C228.82 202.976 233.955 194.078 233.955 184.449L233.955 86.1036C233.955 76.4744 228.82 67.5761 220.483 62.7583L135.445 13.618C127.099 8.79455 116.811 8.79455 108.464 13.618L23.4274 62.7582C15.0901 67.5761 9.95494 76.4744 9.95494 86.1036L9.95493 184.449C9.95493 194.078 15.0901 202.976 23.4273 207.794Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M103.93 267.014L18.5447 217.611C7.06849 210.971 -3.93689e-05 198.707 -3.82087e-05 185.436L-2.95651e-05 86.5642C-2.84049e-05 73.2931 7.0685 61.0292 18.5447 54.3892L103.93 4.98586C115.42 -1.66194 129.58 -1.66194 141.07 4.98586L226.455 54.3892C237.931 61.0292 245 73.2931 245 86.5642L245 185.436C245 198.707 237.931 210.971 226.455 217.611L141.07 267.014C129.58 273.662 115.42 273.662 103.93 267.014ZM108.954 258.309L23.5686 208.906C15.1971 204.062 10.0409 195.117 10.0409 185.436L10.041 86.5642C10.041 76.8835 15.1972 67.9375 23.5686 63.0939L108.954 13.6905C117.335 8.84124 127.665 8.84124 136.046 13.6905L221.431 63.0939C229.803 67.9375 234.959 76.8835 234.959 86.5642L234.959 185.436C234.959 195.117 229.803 204.062 221.431 208.906L136.046 258.309C127.665 263.159 117.335 263.159 108.954 258.309Z" fill="white"/>
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M23.5326 208.937L108.949 258.361C117.333 263.213 127.667 263.213 136.051 258.361L221.467 208.937C229.842 204.091 235 195.142 235 185.457L235 86.5432C235 76.8584 229.842 67.9086 221.467 63.0629L136.051 13.6385C127.667 8.78716 117.333 8.78716 108.949 13.6385L23.5326 63.0629C15.1581 67.9086 10 76.8583 10 86.5432L9.99999 185.457C9.99999 195.142 15.1581 204.091 23.5326 208.937Z" fill="url(#pattern8)"/>
+											</svg>
+										</a>
+
+										<h3 class="item-name">TS. David Cok</h3>
+										<p class="item-position">Tổng Giám đốc của Công ty xuất nhập khẩu Chánh Thu</p>
+									</div>
+									<div class="wrap-item-txt">
+										<div class="item-txt">
+											<span class="close"><i class="fal fa-times"></i></span>
+											<p>8. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</p>
+										</div>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+
+						</div>
+
+						<div class="box-over">
+							<svg width="0" height="0" viewBox="0 0 176 176" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<defs>
+									<linearGradient id="paint0_linear" x1="4" y1="5.14209" x2="186.705" y2="22.7744" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#6A11CB"/>
+										<stop offset="1" stop-color="#2575FC"/>
+									</linearGradient>
+									<linearGradient id="paint1_linear" x1="4" y1="5.14209" x2="186.705" y2="22.7744" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#6A11CB"/>
+										<stop offset="1" stop-color="#2575FC"/>
+									</linearGradient>
+
+									<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image1" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image2" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image3" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image4" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image5" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern6" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image6" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern7" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image7" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+									<pattern id="pattern8" patternContentUnits="objectBoundingBox" width="1" height="1">
+										<use xlink:href="#image8" transform="translate(-0.00595238) scale(0.00505952)"/>
+									</pattern>
+
+									<image id="image1" width="200" height="200" xlink:href="https://via.placeholder.com/300"/>
+									<image id="image2" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image3" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image4" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image5" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image6" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image7" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+									<image id="image8" width="200" height="200" xlink:href="https://i-shop.vnecdn.net/resize/560/560/images/2020/02/13/5e4508040d180-Q31A-6005.jpg"/>
+
+								</defs>
+							</svg>
+
+							<svg width="1920" height="988" viewBox="0 0 1920 988" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden">
+							<path d="M0 100.253C0 43.3916 47.3505 -2.02706 104.163 0.340127L1824.16 72.0068C1877.73 74.2386 1920 118.311 1920 171.92V816.08C1920 869.689 1877.73 913.761 1824.16 915.993L104.163 987.66C47.3506 990.027 0 944.608 0 887.747V100.253Z" fill="#EEF3FF"/ id="catcatcat">
+							</svg>
+						</div>
+
+
+					</div>
+
+
+
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="banner-hall">
+			<div class="container clearfix">
+				<div class="banner-hall-inner">
+					<div class="banner-box-title text-center">
+						<h2 class="title-name"><a href="3d-virtual-reality.html" title="Triển lãm thực tế ảo">Triển lãm thực tế ảo</a></h2>
+					</div>
+					<div class="wrap-banner">
+
+						<a class="banner-link" href="3d-virtual-reality.html" title="">
+							<img src="images/preview-hall-02.png" alt="" class="responsive">
+							<span class="icon-360-circle"></span>
+						</a>
+
+						<div class="banner-layer">
+							<div class="layer-content">
+								<div class="content-txt">
+									<div class="txt-des">
+										<p>Triển lãm thực tế ảo chuyển đổi số Nông nghiệp lần đầu tiên tại Việt Nam</p>
+									</div>
+									<a class="btn-join-now" href="#" title="">Tham gia</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+		<section class="section-video-livestream-slide bg-white">
+			<div class="container clearfix">
+				<div class="video-inner">
+					<div class="video-box-title text-center">
+						<h2 class="title-name"><a href="live-stream.html" title="Danh sách Livestream gian hàng">Danh sách Livestream gian hàng</a></h2>
+					</div>
+					<div class="video-box-list">
+
+						<div class="video-list js_slide_video_livestream">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="video-item video--live">
+										<div class="item-inner">
+											<div class="wrap-image">
+												<a href="live-stream-detail.html" title="" class="js-resize-ratio" data-ratio-resize="5x3">
+													<img src="images/post-larger.png" alt="">
+													<div class="icon-video"></div>
+												</a>
+											</div>
+											<div class="wrap-info">
+												<div class="row-1">
+													<div class="info-time">
+														<div class="live-time">Live</div>
+													</div>
+													<div class="info-txt">Nông nghiệp công nghệ</div>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="live-stream-detail.html" title="">Nông nghiệp công nghệ cao - Sẽ là ngành hot nhất tại Việt Nam</a>
+												</h3>
+											</div>
+
+										</div>
+									</div><!-- End .video-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="video-item video--live">
+										<div class="item-inner">
+											<div class="wrap-image">
+												<a href="live-stream-detail.html" title="" class="js-resize-ratio" data-ratio-resize="5x3">
+													<img src="images/post-larger.png" alt="">
+													<div class="icon-video"></div>
+												</a>
+											</div>
+											<div class="wrap-info">
+												<div class="row-1">
+													<div class="info-time">
+														<div class="live-time">Live</div>
+													</div>
+													<div class="info-txt">Nông nghiệp công nghệ</div>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="live-stream-detail.html" title="">Nông nghiệp công nghệ cao - Sẽ là ngành hot nhất tại Việt Nam</a>
+												</h3>
+											</div>
+
+										</div>
+									</div><!-- End .video-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="video-item video--live">
+										<div class="item-inner">
+											<div class="wrap-image">
+												<a href="live-stream-detail.html" title="" class="js-resize-ratio" data-ratio-resize="5x3">
+													<img src="images/post-larger.png" alt="">
+													<div class="icon-video"></div>
+												</a>
+											</div>
+											<div class="wrap-info">
+												<div class="row-1">
+													<div class="info-time">
+														<div class="live-time">Live</div>
+													</div>
+													<div class="info-txt">Nông nghiệp công nghệ</div>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="live-stream-detail.html" title="">Nông nghiệp công nghệ cao - Sẽ là ngành hot nhất tại Việt Nam</a>
+												</h3>
+											</div>
+
+										</div>
+									</div><!-- End .video-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="video-item video--live">
+										<div class="item-inner">
+											<div class="wrap-image">
+												<a href="live-stream-detail.html" title="" class="js-resize-ratio" data-ratio-resize="5x3">
+													<img src="images/post-larger.png" alt="">
+													<div class="icon-video"></div>
+												</a>
+											</div>
+											<div class="wrap-info">
+												<div class="row-1">
+													<div class="info-time">
+														<div class="live-time">Live</div>
+													</div>
+													<div class="info-txt">Nông nghiệp công nghệ</div>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="live-stream-detail.html" title="">Nông nghiệp công nghệ cao - Sẽ là ngành hot nhất tại Việt Nam</a>
+												</h3>
+											</div>
+
+										</div>
+									</div><!-- End .video-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="video-item video--live">
+										<div class="item-inner">
+											<div class="wrap-image">
+												<a href="live-stream-detail.html" title="" class="js-resize-ratio" data-ratio-resize="5x3">
+													<img src="images/post-larger.png" alt="">
+													<div class="icon-video"></div>
+												</a>
+											</div>
+											<div class="wrap-info">
+												<div class="row-1">
+													<div class="info-time">
+														<div class="live-time">Live</div>
+													</div>
+													<div class="info-txt">Nông nghiệp công nghệ</div>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="live-stream-detail.html" title="">Nông nghiệp công nghệ cao - Sẽ là ngành hot nhất tại Việt Nam</a>
+												</h3>
+											</div>
+
+										</div>
+									</div><!-- End .video-item -->
+								</div>
+								
+							</div>
+
+							<div class="swiper-pagination-livestream"></div>
+							<div class="swiper-button-prev-livestream"></div>
+							<div class="swiper-button-next-livestream"></div>
+						</div><!-- End .video-list -->
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="section-news section-news-home bg-noimage clearfix">
+			<div class="container clearfix">
+				<div class="news-inner">
+					<div class="news-box-title">
+						<h2 class="title-name">Tin tức</h2>
+					</div>
+					<div class="news-box-list">
+
+						<div class="news-list">
+
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" target="_blank" href="news-detail.html" title="">
+												<!-- <img src="http://via.placeholder.com/540x324/F8F8F6/aaa" alt="" class="responsive"> -->
+												<img src="images/post-larger.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" target="_blank" href="news-detail.html" title="">
+													Du học ngành kinh doanh tại UWA Business School, Australia
+												</a>
+											</h3>
+											<p class="item-description">
+												Trường Kinh doanh UWA Business School thuộc đại học Tây Úc nằm trong top 100 trường kinh doanh tốt nhất thế giới.
+											</p>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" target="_blank" href="news-detail.html" title="">
+												<img src="images/post-larger.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" target="_blank" href="news-detail.html" title="">
+													Du học ngành kinh doanh tại UWA Business School, Australia
+												</a>
+											</h3>
+											<p class="item-description">
+												Trường Kinh doanh UWA Business School thuộc đại học Tây Úc nằm trong top 100 trường kinh doanh tốt nhất thế giới.
+											</p>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" target="_blank" href="news-detail.html" title="">
+												<img src="images/post-larger.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" target="_blank" href="news-detail.html" title="">
+													Du học ngành kinh doanh tại UWA Business School, Australia
+												</a>
+											</h3>
+											<p class="item-description">
+												Trường Kinh doanh UWA Business School thuộc đại học Tây Úc nằm trong top 100 trường kinh doanh tốt nhất thế giới.
+											</p>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" target="_blank" href="news-detail.html" title="">
+												<img src="images/post-larger.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" target="_blank" href="news-detail.html" title="">
+													Du học ngành kinh doanh tại UWA Business School, Australia
+												</a>
+											</h3>
+											<p class="item-description">
+												Trường Kinh doanh UWA Business School thuộc đại học Tây Úc nằm trong top 100 trường kinh doanh tốt nhất thế giới.
+											</p>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+								<div class="news-item">
+									<div class="item-inner">
+										<div class="item-image">
+											<a class="item-image-a" target="_blank" href="news-detail.html" title="">
+												<img src="images/post-larger.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="item-info">
+											<h3 class="item-title">
+												<a class="item-title-a" target="_blank" href="news-detail.html" title="">
+													Du học ngành kinh doanh tại UWA Business School, Australia
+												</a>
+											</h3>
+											<p class="item-description">
+												Trường Kinh doanh UWA Business School thuộc đại học Tây Úc nằm trong top 100 trường kinh doanh tốt nhất thế giới.
+											</p>
+										</div>
+									</div>
+								</div><!-- End .news-item -->
+
+						</div>
+
+						<a class="btn-viewmore" href="news-list.html" title="Xem thêm">Xem thêm</a>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+
+		<section class="section-booth-slide-small clearfix" id="section_booth_slide">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list" id="slide_booth_small">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+											<div class="group-act">
+												<a href="#" title="" class="btn-item btn-item-register">
+													<span>Kết nối giao thương</span>
+												</a>
+												<a href="#" title="" class="btn-item btn-item-3d-virtual js_act_show_video_360" title="Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH" data-iframe='https://vsmap.vn/hannamhoabinh/' data-title='Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH'>
+													<span>Gian hàng thực tế ảo</span>
+												</a>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+							</div>
+						</div><!-- End #slide_booth -->
+
+						<div class="swiper-pagination-booth"></div>
+						<div class="swiper-button-prev-booth"></div>
+						<div class="swiper-button-next-booth"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Start Box cũ -- bỏ đi -->
+		<section class="section-booth-slide clearfix" style="display: none;">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list" id="slide_booth">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														1. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														2. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-03.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														3. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														4. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														4. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+
+							</div>
+						</div><!-- End #slide_booth -->
+
+						<div class="swiper-pagination-booth"></div>
+						<div class="swiper-button-prev-booth"></div>
+						<div class="swiper-button-next-booth"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Box cũ -- bỏ đi -->
+
+
+		<!-- <section class="type-retailer bg-gradient clearfix">
+			<div class="bg-pattern"></div>
+			<div class="container clearfix">
+				<div class="retailer-inner">
+					<div class="retailer-box-title">
+						<h2 class="title-name">Ngành hàng</h2>
+					</div>
+					<div class="retailer-list" id="slide_retailer">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-01.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Nguyên liệu phân bón</a></h3>
+									<div class="item-desc">Được công ty Hóa chất phân bón nhập khẩu từ nhiều quốc gia trên thế giới</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-02.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Cung cấp nông sản</a></h3>
+									<div class="item-desc">Cung cấp dịch vụ tư vấn đầu tư phát triển sản xuất, chế biến rau quả, nông, lâm sản</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-03.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Chăn nuôi</a></h3>
+									<div class="item-desc">Cung cấp lợi nhuận và phục vụ cho đời sống sinh hoạt của con người.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-04.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Trồng trọt</a></h3>
+									<div class="item-desc">Là lĩnh vực quan trọng, cung cấp lương thực, thực phẩm cho con người</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-05.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Máy móc</a></h3>
+									<div class="item-desc">Cung cấp lợi nhuận và phục vụ cho đời sống sinh hoạt của con người.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-04.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Trồng trọt</a></h3>
+									<div class="item-desc">Là lĩnh vực quan trọng, cung cấp lương thực, thực phẩm cho con người</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-button-prev-retailer"><i class="fal fa-angle-left"></i></div>
+						<div class="swiper-button-next-retailer"><i class="fal fa-angle-right"></i></div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+
+		<section class="section-booth-list-col-3 bg-white">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng kết nối kinh doanh</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list">
+
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+									<div class="group-act">
+										<a href="#" title="" class="btn-item btn-item-register">
+											<span>Kết nối giao thương</span>
+										</a>
+										<a href="#" title="" class="btn-item btn-item-3d-virtual js_act_show_video_360" title="Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH" data-iframe='https://agri.tourzy.vn/agri-tour-360?storeid=4&cat=1' data-title='Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH'>
+											<span>Gian hàng thực tế ảo</span>
+										</a>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-current">29.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-current">29.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-current">29.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-current">29.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									
+									<div class="group-act">
+										<a href="#" title="" class="btn-item btn-item-register">
+											<span>Kết nối giao thương</span>
+										</a>
+										<a href="#" title="" class="btn-item btn-item-3d-virtual js_act_show_video_360" title="Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH" data-iframe='https://agri.tourzy.vn/agri-tour-360?storeid=4&cat=1' data-title='Gian hàng NANUFOODS - CHUYÊN CUNG CẤP TRÁI CÂY SẤY SẠCH'>
+											<span>Gian hàng thực tế ảo</span>
+										</a>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail-b2b.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail-b2b.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+
+						</div><!-- End .booth-list -->
+						<a class="btn-viewall" href="booth-detail-b2b.html" title="Xem tất cả">Xem tất cả</a>
+						<div class="box-pagination clearfix">
+							<ul class="pagination pagination-lg">
+								<li><a class="active" href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-booth-list-col-3">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng bán lẻ</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list">
+
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+
+									<div class="header-item">
+										<div class="box-image">
+											<a class="item-image-a" href="booth-detail.html" title="">
+												<img src="images/logo-seller-01.png" alt="" class="responsive">
+											</a>
+										</div>
+										<div class="box-info">
+											<h3 class="item-title">
+												<a class="item-title-a" href="booth-detail.html" title="">
+													gapro
+												</a>
+											</h3>
+											<p class="item-description">
+												<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+											</p>
+										</div>
+									</div>
+									<div class="body-item">
+										<div class="list-products">
+											<p class="title-slide">Sản phẩm tiêu biểu:</p>
+											<div class="list-type-pro slide_product_cate">
+
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+												<div class="item-product">
+													<a class="product-image" href="product-detail.html" title="">
+														<img src="images/product-avt-01.jpg" alt="">
+														<span class="percent-discount">-30%</span>
+													</a>
+													<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+													<div class="box-price">
+														<p class="box">
+															<span class="price-old">29.000.000đ</span>
+															<span class="price-sale">27.000.000đ</span>
+														</p>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div><!-- End .booth-item -->
+
+						</div><!-- End .booth-list -->
+						<a class="btn-viewall" href="booth-detail.html" title="Xem tất cả">Xem tất cả</a>
+						<div class="box-pagination clearfix">
+							<ul class="pagination pagination-lg">
+								<li><a class="active" href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section-form-tabs clearfix">
+			<div class="container clearfix">
+				<div class="wrap-form-tabs">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-form-1-tab" data-bs-toggle="pill" href="#pills-form-1" role="tab" aria-controls="pills-form-1" aria-selected="true">Mời đặt gian hàng</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-form-2-tab" data-bs-toggle="pill" href="#pills-form-2" role="tab" aria-controls="pills-form-2" aria-selected="false">Mời tài trợ</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-form-1" role="tabpanel" aria-labelledby="pills-form-1-tab">
+
+							<div class="contact-form">
+								<form action="" method="post" class="form-horizontal">
+									<fieldset>
+
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_name_company" class="col-sm-3 col-form-label">Tên doanh nghiệp:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_name_company" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_phone" class="col-sm-3 col-form-label">Số điện thoại:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_phone" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_email" class="col-sm-3 col-form-label">Email:</label>
+											<div class="col-sm-9">
+												<input type="email" class="form-control" name="" id="frm_home_email" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_content" class="col-sm-3 col-form-label">Nội dung:</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" name="" id="frm_home_content" rows="3" required></textarea>
+											</div>
+										</div>
+										<!-- Text input-->
+										<!-- <div class="form-group row" id="captcha_check"> ... </div> -->
+										<div class="form-group row">
+											<label class="col-sm-3 col-form-label"></label>
+											<div class="col-sm-9">
+												<button type="submit" class="btn btn-submit">Gửi</button>
+											</div>
+										</div>
+
+									</fieldset>
+									
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-form-2" role="tabpanel" aria-labelledby="pills-form-2-tab">
+
+							<div class="contact-form">
+								<form action="" method="post" class="form-horizontal">
+									<fieldset>
+
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_name_company" class="col-sm-3 col-form-label">Tên doanh nghiệp:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_02_name_company" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_phone" class="col-sm-3 col-form-label">Số điện thoại:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_02_phone" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_email" class="col-sm-3 col-form-label">Email:</label>
+											<div class="col-sm-9">
+												<input type="email" class="form-control" name="" id="frm_home_02_email" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_content" class="col-sm-3 col-form-label">Nội dung:</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" name="" id="frm_home_02_content" rows="3" required></textarea>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label class="col-sm-3 col-form-label"></label>
+											<div class="col-sm-9">
+												<button type="submit" class="btn btn-submit">Gửi câu hỏi</button>
+											</div>
+										</div>
+
+									</fieldset>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section-unit-3 clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					<div class="unit-box-title">
+						<h2 class="title-name">Đơn vị thực hiện</h2>
+					</div>
+
+					<div class="unit-box-list">
+
+						<div class="unit-list" id="unit_list">
+
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_01.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_02.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_03.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_04.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+
+						</div>
+
+					</div>
+
+
+					<svg width="0" height="0" viewBox="0 0 218 224" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<pattern id="unit_pattern_1" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_1" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_2" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_3" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_4" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							
+							<linearGradient id="unit_linear" x1="109" y1="221" x2="109" y2="3.00001" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#EEF3FF"/>
+								<stop offset="1" stop-color="#F6F9FF"/>
+							</linearGradient>
+
+							<mask id="unit_mask" mask-type="alpha" maskUnits="userSpaceOnUse" x="14" y="9" width="190" height="206">
+								<path d="M92.7456 210.714C102.804 216.429 115.196 216.429 125.254 210.714L187.746 175.209C197.804 169.495 204 158.934 204 147.504V76.4954C204 65.0662 197.804 54.5052 187.746 48.7906L125.254 13.286C115.196 7.57135 102.804 7.57135 92.7456 13.2859L30.2544 48.7906C20.1962 54.5052 14 65.0662 14 76.4954V147.504C14 158.934 20.1962 169.495 30.2544 175.209L92.7456 210.714Z" fill="black"/>
+							</mask>
+
+							<image id="img_unit_1" width="531" height="329" xlink:href="https://via.placeholder.com/300"/>
+							<image id="img_unit_2" width="331" height="329" xlink:href="images/unit_logo_02.png"/>
+							<image id="img_unit_3" width="331" height="329" xlink:href="images/unit_logo_03.png"/>
+							<image id="img_unit_4" width="331" height="329" xlink:href="images/unit_logo_04.png"/>
+						</defs>
+					</svg>
+
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="section-unit clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					<div class="unit-box-title">
+						<div class="title-name">Đơn vị tài trợ</div>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="title-level-box">
+							<div class="title-level-name">Vàng</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.coca-cola.com/" title="Cocacola">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea650f2f1554cocacola.png" alt="Cocacola">
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="title-level-box">
+							<div class="title-level-name">Bạc</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.britishcouncil.vn/" title="British Council">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6510463bcabritish-council.png" alt="British Council">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.msb.com.vn/" title="MSB">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6511be8422msb.png" alt="MSB">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="title-level-box">
+							<div class="title-level-name">Đồng</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="http://royaltea.com.vn/" title="Royaltea">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6512a5b858royaltea.png" alt="Royaltea">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.grab.com/vn/" title="Grab">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea65156f4037grab.png" alt="Grab">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://bitis.com.vn/pages/bitis-hunter" title="BitisHunter">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6518ec908ebitis-hunter.png" alt="BitisHunter">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="banner-fluid banner-fluid--border">
+			<div class="container clearfix">
+				<div class="banner-fluid-inner">
+					<div class="banner-box-title text-center">
+						<h2 class="title-name"><a href="#" title="Nhà trưng bày">Nhà trưng bày</a></h2>
+					</div>
+					<div class="wrap-banner">
+
+						<a class="banner-link" href="#" title="Nhà trưng bày">
+							<img src="images/preview-hall-02.png" alt="Nhà trưng bày" class="responsive">
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	
+
+
+	<footer class="footer footer_area clearfix" id="footer_area">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		
+		<div class="popup-page-home"></div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	
+	<script defer>
+		$(document).ready(function () {
+			$("#countdown_time").countdown("2021/06/10 00:07:00", function(event) {
+				$(".time_day").text(
+					event.strftime('%D')
+				);
+				$(".time_hour").text(
+					event.strftime('%H')
+				);
+				$(".time_minute").text(
+					event.strftime('%M')
+				);
+				$(".time_seconds").text(
+					event.strftime('%S')
+				);
+			});
+		});
+
+	</script>
+	
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

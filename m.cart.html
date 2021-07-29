@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header-mb bg-img header-scroll">
+		<div class="header-main">
+			<div class="container clearfix">
+
+
+				<!-- <div class="view-option-1">
+					<div class="toggle-btn" data-bs-toggle="modal" data-bs-target="#showNavSideMenu">
+						<span class="fal fa-bars"></span>
+					</div>
+					<div class="brand">
+						<a class="logo" href="index.html" title="Agriculture Fair 2020">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+				</div> -->
+
+
+
+
+				<div class="view-option-2">
+					<div class="toggle-btn" data-bs-toggle="modal" data-bs-target="#showNavSideMenu">
+						<span class="fal fa-bars"></span>
+					</div>
+					<div class="brand">
+						<a class="logo" href="m.index.html" title="Agriculture Fair 2020">
+							<img src="images/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="box-search-mb">
+						<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+						<form class="form-search-top" id="frm_search" action="m.search.html" method="post">
+							<div class="form-group-inline">
+								<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+								<button class="btn-search"></button>
+							</div>
+						</form>
+					</div>
+
+					<div class="box-user-login">
+						<!-- Start user chưa đăng nhập -->
+							<!-- <div class="user-not-logged-in">
+								<span class="btn-sign-in">Đăng ký</span>
+							</div> -->
+						<!-- End user chưa đăng nhập -->
+
+						<!-- Start user đã đăng nhập -->
+							<div class="user-logged">
+								<div class="user-name btn-dropdown-user" onclick="showDropdownUser();">
+									<span class="avata">A</span>
+									<span class="name-value">Anh Tuấn</span>
+									<div class="dropdown-user" id="dropdown-user">
+										<ul class="myvne_user_status">
+											<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+											<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+											<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="user-notify">
+									<a href="" title="Bạn có 2 thông báo mới">
+										<i class="fas fa-bell"></i>
+										<span class="notify-number">2</span>
+									</a>
+								</div>
+							</div>
+						<!-- End user đã đăng nhập -->
+					</div>
+
+				</div>
+
+
+			</div>
+		</div>
+	</header>
+
+	
+	<main class="main" role="main">
+	
+
+		<section class="banner-top-small clearfix">
+			<div class="banner-img" style="background-image: url('images/banner-00.jpg');">
+				<div class="container clearfix">
+					<h1 class="title-banner">Giỏ hàng</h1>
+				</div>
+			</div>
+		</section>
+
+		<div class="wrap-cart-page m-giohang" id="container_cart-step">
+			<div class="container">
+
+
+
+				<section class="wrap-orders wrap-orders-step-1 clearfix">
+					<div class="box clearfix">
+
+							<div class="table-order" id="cart">
+								<div class="list-item-cart">
+									<form class="box form-order clearfix">
+
+										<div class="title-wrap-order">
+											<span class="title">Tổng đơn hàng</span>
+										</div>
+
+										<div class="title-order">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox active"></div>
+											</div>
+											<span class="title">Đơn hàng 1 (Apple)</span>
+										</div>
+
+										<div class="item-cart clearfix">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox active"></div>
+											</div>
+											<div class="img-item-cart">
+												<a href="m.product-detail.html" title="" class="box fancybox-thumb" rel="gal">
+											  		<img src="images/product-avt-01.jpg" alt="" class="">
+												</a>
+											</div>
+											<div class="info-item"> 
+												<a href="m.product-detail.html" title="" class="name-product">Điện Thoại iPhone X 256GB - Hàng Nhập Khẩu</a>
+												<div class="warning-quantity">Còn tối đa <span>5</span> sản phẩm trong kho</div>
+												<div class="list-inline">
+													<a href="#" class="btn-delete" data-toggle="modal" data-target="#box_popup_warning"><span class="fal fa-trash-alt"></span></a>
+													<select name="selectbasic" class="select-quantity">
+														<option value="1">1</option>
+														<option value="2" selected="">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+													</select>
+													<div class="amount-item">8,500,000đ</div>
+												</div>
+											</div>
+										</div>
+										<div class="border-dot"></div>
+
+										<div class="title-order">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox active"></div>
+											</div>
+											<span class="title">Đơn hàng 2 (Apple)</span>
+										</div>
+										<div class="item-cart clearfix">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox active"></div>
+											</div>
+											<div class="img-item-cart">
+												<a href="m.product-detail.html" title="" class="box fancybox-thumb" rel="gal">
+											  		<img src="images/product-avt-01.jpg" alt="" class="">
+												</a>
+											</div>
+											<div class="info-item"> 
+												<a href="m.product-detail.html" title="" class="name-product">AQUA AQF-R320 210L</a>
+												<div class="list-inline">
+													<a href="#" class="btn-delete" data-toggle="modal" data-target="#box_popup_warning"><span class="fal fa-trash-alt"></span></a>
+													<select name="selectbasic" class="select-quantity">
+														<option value="1">1</option>
+														<option value="2" selected="">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+													</select>
+													<div class="amount-item">14,000,000đ</div>
+												</div>
+											</div>
+											<div class="group-attach-sales clearfix">
+												<div class="item-sale">
+													<div class="box-img-attach">
+														<img src="images/product-avt-01.jpg" alt="">
+													</div>
+													<div class="info">
+														<a href="m.product-detail.html" title="" class="name">Bao da cao cấp Galaxy Note 8</a>
+														<p class="i">(khuyến mại đi kèm)</p>
+													</div>
+												</div>
+												<div class="item-sale">
+													<div class="box-img-attach">
+														<img src="images/product-avt-01.jpg" alt="">
+													</div>
+													<div class="info">
+														<a href="m.product-detail.html" title="" class="name">Bao da cao cấp Galaxy Note 8</a>
+														<p class="i">(khuyến mại đi kèm)</p>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="border-dot"></div>
+
+										<div class="title-order">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox"></div>
+											</div>
+											<span class="title">Đơn hàng 3 (Apple)</span>
+										</div>
+										<div class="item-cart clearfix">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox"></div>
+											</div>
+											<div class="img-item-cart">
+												<a href="m.product-detail.html" title="" class="box fancybox-thumb" rel="gal">
+											  		<img src="images/product-avt-01.jpg" alt="" class="">
+												</a>
+											</div>
+											<div class="info-item"> 
+												<a href="m.product-detail.html" title="" class="name-product">Túi xách thời trang Verchini màu đen chấm bi đen</a>
+												<div class="list-inline">
+													<a href="#" class="btn-delete" data-toggle="modal" data-target="#box_popup_warning"><span class="fal fa-trash-alt"></span></a>
+													<!-- <select name="selectbasic" class="select-quantity">
+														<option value="1">1</option>
+														<option value="2" selected="">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+													</select> -->
+													<p class="bao-het-hang">Hết hàng</p>
+													<div class="amount-item">9,500,000đ</div>
+												</div>
+											</div>
+										</div>
+										<div class="item-cart clearfix">
+											<div class="cell-checkbox">
+												<div class="btn-checkbox"></div>
+											</div>
+											<div class="img-item-cart">
+												<a href="m.product-detail.html" title="" class="box fancybox-thumb" rel="gal">
+											  		<img src="images/product-avt-01.jpg" alt="" class="">
+												</a>
+											</div>
+											<div class="info-item"> 
+												<a href="m.product-detail.html" title="" class="name-product">AQUA AQF-R320 210L</a>
+												<div class="list-inline">
+													<a href="#" class="btn-delete" data-toggle="modal" data-target="#box_popup_warning"><span class="fal fa-trash-alt"></span></a>
+													<select name="selectbasic" class="select-quantity">
+														<option value="1">1</option>
+														<option value="2" selected="">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+														<option value="5">5</option>
+														<option value="6">6</option>
+														<option value="7">7</option>
+														<option value="8">8</option>
+														<option value="9">9</option>
+														<option value="10">10</option>
+														<option value="11">11</option>
+														<option value="12">12</option>
+														<option value="13">13</option>
+														<option value="14">14</option>
+														<option value="15">15</option>
+														<option value="16">16</option>
+														<option value="17">17</option>
+														<option value="18">18</option>
+														<option value="19">19</option>
+														<option value="20">20</option>
+													</select>
+													<!-- <div class="input-quantity">
+														<input type="number" min="1" max="100" value="1" class="choose-quantity">
+														<span class="up_num"></span>
+														<span class="down_num"></span>
+													</div> -->
+													<div class="amount-item">9,500,000đ</div>
+												</div>
+											</div>
+										</div>
+										<div class="border-dot"></div>
+
+									</form>
+								</div>
+							</div>
+					</div>
+				</section>
+
+				<section class="box-invoice clearfix">
+					<div class="title-box">
+						<h3>Hóa đơn</h3>
+					</div>
+
+					<div class="content-box">
+
+						<div class="content-invoice clearfix">
+							<div class="col-right">
+								<p class="tien-hang">Tiền hàng: <span>32.000.000đ</span></p>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+
+
+				<div class="wrap-btn-page-giohang">
+					<div class="box-inner">
+
+						<div class="total-cart">
+							<div class="col-label">Tổng tiền (tạm tính):</div>
+							<div class="col-value">41.020.000đ</div>
+						</div>
+
+						<div class="group-action-order">
+							<div class="col-left">
+								<div class="btn-select-all-pro"> 
+									<div class="cell-checkbox"></div> 
+									<div class="cell-text">
+										<span>Chọn tất cả</span>
+										<span class="count-item-pro">(40 sản phẩm)</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-right">
+								<a href="m.cart-step-1.html" class="btn-checkout-step-1">Tiến hành thanh toán</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+
+		<section class="section-product-slide-fuild clearfix">
+			<div class="container clearfix">
+				<div class="list-product-inner">
+					<div class="product-box-title">
+						<h2 class="title-name">Sản phẩm nổi bật</h2>
+						<!-- Add Arrows -->
+						<div class="group-bnt-control">
+							<div class="swiper-button-prev-product-hot"></div>
+							<div class="swiper-button-next-product-hot"></div>
+						</div>
+					</div>
+					<div class="list-product">
+
+						<div class="list-product-slide" id="slide_product_hot">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-01.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-02.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-03.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-04.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-03.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-04.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="product-item" itemscope itemtype="http://schema.org/Product">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="m.product-detail.html" title="" itemprop="url">
+													<img src="images/product-avt-04.jpg" alt="" class="responsive" itemprop="image">
+												</a>
+											</div>
+											<div class="item-info">
+												<span class="cate-name">Ngũ cốc</span>
+												<h3 class="item-title" itemprop="name">
+													<a class="item-title-a" href="m.product-detail.html" title="" itemprop="url">
+														Hạt điều gấc mật ong cao cấp Diginuts (250g)
+													</a>
+												</h3>
+												<div class="box-price" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+													<span class="price-sale" itemprop="price" content="27000000">27.000.000đ</span>
+													<meta itemprop="priceCurrency" content="VND">
+													<span class="price-old">29.000.000đ</span>
+													<span class="percent-discount">-35%</span>
+												</div>
+											</div>
+										</div>
+									</div><!-- End .product-item -->
+								</div>
+
+							</div>
+							<div class="swiper-pagination-product-hot"></div>
+						</div><!-- End .product-list -->
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="ads-fluid text-center clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="ads-fluid-inner">
+
+						<!-- google ads embed this here -->
+						<img src="images/ads.jpg" alt="">
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+	</main>
+	
+
+
+	<footer class="footer clearfix">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="m.index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		
+		<div class="popup-page-home"></div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

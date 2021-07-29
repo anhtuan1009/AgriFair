@@ -1,0 +1,3117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+	
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	
+	
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header header-scroll">
+		<div class="header-top">
+			<div class="container clearfix">
+				<div class="menu-top-inner">
+					<div class="group-btn">
+						<div class="btn-back">
+							<a href="https://vnexpress.net" title="Quay lại VnExpress"><i class="fal fa-arrow-left"></i> Quay lại VnExpress</a>
+						</div>
+						<div class="list-item-socail">
+							<p>Chia sẻ <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+						<div class="box-user-login">
+
+
+							<!-- Start user chưa đăng nhập -->
+								<!-- <div class="user-not-logged-in">
+									<span class="btn-sign-in">Đăng nhập</span>
+								</div> -->
+							<!-- End user chưa đăng nhập -->
+
+							<!-- Start user đã đăng nhập -->
+								<div class="user-logged">
+									<div class="user-name">
+										<span class="avata">A</span>
+										<span class="name-value">Anh Tuấn</span>
+										<div class="dropdown-user" id="dropdown-user">
+											<ul class="myvne_user_status">
+												<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+												<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+												<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="user-notify">
+										<a href="" title="Bạn có 2 thông báo mới">
+											<i class="fas fa-bell"></i>
+											<span class="notify-number">2</span>
+										</a>
+									</div>
+								</div>
+							<!-- End user đã đăng nhập -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container clearfix">
+						
+				<div class="header-left">
+					<a class="logo" href="index.html" title="">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="header-right">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Gian hàng</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="3d-virtual-reality.html" title="">3D Virtual Reality</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+							<li>
+								<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+								<form class="form-search-top" id="frm_search" action="search.html" method="post">
+									<div class="form-group-inline">
+										<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+										<button class="btn-search"></button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<a class="item-cart lengkeng" href="cart.html" title="Giỏ hàng">
+									<span class="number-count">3</span>
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip2)">
+										<path d="M9.07812 18.1018H23.8987C24.2657 18.1018 24.5876 17.8591 24.6869 17.5066L27.9684 6.02203C28.0389 5.77444 27.9906 5.50848 27.8353 5.30276C27.6798 5.09769 27.438 4.97656 27.1799 4.97656H7.18436L6.59796 2.33789C6.51465 1.96213 6.1814 1.69531 5.79688 1.69531H0.820312C0.367004 1.69531 0 2.06232 0 2.51562C0 2.96915 0.367004 3.33594 0.820312 3.33594H5.13849L8.1008 16.666C7.22922 17.045 6.61719 17.9125 6.61719 18.9221C6.61719 20.279 7.72119 21.383 9.07812 21.383H23.8987C24.3522 21.383 24.719 21.0162 24.719 20.5627C24.719 20.1094 24.3522 19.7424 23.8987 19.7424H9.07812C8.62631 19.7424 8.25781 19.3748 8.25781 18.9221C8.25781 18.4694 8.62631 18.1018 9.07812 18.1018Z" fill="#109E4C"/>
+										<path d="M8.25781 23.8438C8.25781 25.2009 9.36182 26.3047 10.719 26.3047C12.0759 26.3047 13.1799 25.2009 13.1799 23.8438C13.1799 22.4868 12.0759 21.3828 10.719 21.3828C9.36182 21.3828 8.25781 22.4868 8.25781 23.8438Z" fill="#109E4C"/>
+										<path d="M19.7971 23.8438C19.7971 25.2009 20.9011 26.3047 22.2581 26.3047C23.6152 26.3047 24.719 25.2009 24.719 23.8438C24.719 22.4868 23.6152 21.3828 22.2581 21.3828C20.9011 21.3828 19.7971 22.4868 19.7971 23.8438Z" fill="#109E4C"/>
+										</g>
+										<defs>
+										<clipPath id="clip2">
+										<rect width="28" height="28" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+	<main class="main" role="main">
+
+		<section class="banner-top clearfix">
+			<div class="slide-home" id="slide_home" style="background-image: url(images/banner-00.jpg),linear-gradient(to bottom, #698129, #698129 85%, transparent 85% );">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+
+											<div class="breadcrumb-event">
+												<a class="breadcrumb-item" href="#" title="Fair 2020">Fair 2020</a>
+												<span class="breadcrumb-item active">Agriculture Fair 2020</span>
+											</div>
+
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+
+											<div class="intro-countdown">
+												<div class="countdown-txt"><i class="fal fa-clock"></i> Thời gian diễn ra:</div>
+												<div class="countdown-value" id="countdown_time">
+													<div class="attr-time">
+														<span class="time-value time_day">00</span>
+														<span class="time-text">Ngày</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_hour">00</span>
+														<span class="time-text">Giờ</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_minute">00</span>
+														<span class="time-text">Phút</span>
+													</div>
+													<div class="attr-time">
+														<span class="time-value time_seconds">00</span>
+														<span class="time-text">Giây</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="box-right">
+										</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+										</div>
+										<div class="box-right">
+										</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="swiper-slide">
+							<div class="item-slide">
+								<div class="container clearfix">
+									<div class="item-slide-inner">
+
+										<div class="box-left">
+											<h1 class="banner-title">Hội trợ triển lãm nông nghiệp</h1>
+											<p class="banner-des">Sự kiện toàn diện nhất trong ngành Công nghệ Thiết bị Nông nghiệp tại Việt Nam. Nơi tiếp cận công nghệ từ các nhà sản xuất, nghiên cứu sáng chế trong nước và quốc tế.</p>
+										</div>
+										<div class="box-right">
+										</div>
+
+									</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="container group-btn-slide">
+					<div class="swiper-progress-slide-home">
+						<svg class="progress-ring" width="40" height="40">
+							<circle class="progress-ring__circle" stroke="white" stroke-width="4" fill="transparent" r="18" cx="20" cy="20"></circle>
+						</svg>
+					</div>
+					<div class="swiper-pagination-slide-home-v"></div>
+					<!-- <div class="swiper-button-prev-slide-home"></div>
+					<div class="swiper-button-next-slide-home"></div> -->
+				</div>
+			</div>
+					
+		</section>
+
+
+
+		<section class="section-video-live clearfix">
+			<div class="container clearfix">
+				<div class="video-inner">
+					<div class="video-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Livestream hội thảo</h2>
+							<p class="title-sub"></p>
+						</div>
+					</div>
+					<div class="video-box-content">
+
+						<div class="slide-video-livestream" id="slide_video_livestream_01">
+
+							<a class="single-gl-item video show-video" href="https://video.vnexpress.net/services/live/v3/streaming.php?sl=4&sn=thuematbang.m3u8&vid=300172&aid=4142476&tn=https%3A%2F%2Fiv.vnecdn.net%2Fvnexpress%2Fimages%2Fweb%2F2019%2F04%2F18%2Flive-thumb-default-8234-1554949750_500x300.jpg&tl=https%3A%2F%2Fvnexpress.net%2Fgiai-bai-toan-thue-van-phong-thoi-covid-19-4142476.html&tt=T%E1%BB%8Da+%C4%91%C3%A0m+kinh+t%E1%BA%BF+thu%C3%AA+m%E1%BA%B7t+b%E1%BA%B1ng&sle=2" data-poster="theme/frontend/images/pro-detail/detail_06.jpg" data-src="theme/frontend/images/pro-detail/mov_bbb.mp4" title="">
+								<img class="call-video" src="http://via.placeholder.com/670x375.jpg/5B8C51/fff" alt="">
+							</a>
+							<a class="single-gl-item video show-video" href="https://www.youtube.com/watch?v=AzUZhdVHSUo" data-poster="https://i.ytimg.com/vi/AzUZhdVHSUo/hqdefault.jpg" data-src="https://www.youtube.com/watch?v=AzUZhdVHSUo" title="">
+								<img class="call-video" src="https://i.ytimg.com/vi/AzUZhdVHSUo/hqdefault.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="list-thumbnai-video" id="slide_video_livestream_02">
+							<a class="single-gl-item show-video" href="theme/frontend/images/pro-detail/detail_06.jpg">
+								<img class="call-video" src="https://img.youtube.com/vi/lToL2f3oJac/0.jpg" alt="">
+							</a>
+							<a class="single-gl-item show-video" href="https://i.ytimg.com/vi/AzUZhdVHSUo/hqdefault.jpg">
+								<img class="cloudzoom" src="https://i.ytimg.com/vi/AzUZhdVHSUo/hqdefault.jpg" />
+							</a>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="schedule clearfix">
+			<div class="container clearfix">
+
+
+
+				<div class="schedule_box" id="schedulebox01">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<p>Hiện tại đang có ngày để bạn lựa chọn</p>
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper" id="library_wrapper_schedule_01">
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">12/05/2020</span>
+															<span class="item-schedule_timeframe">4 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">15/05/2020</span>
+															<span class="item-schedule_timeframe">2 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">18/05/2020</span>
+															<span class="item-schedule_timeframe">6 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">20/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-prev-schedule" title="Previous"></div>
+										<div class="swiper-button-next-schedule" title="Next"></div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<button type="button" class="btn-register" data-bs-toggle="modal" data-target="#seminorModal">
+											Đăng ký ngay
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End option -->
+
+
+				<div class="schedule_box" id="schedulebox02">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<p>Hiện tại đang có phiên tư vấn bạn có thể tham gia ngay hoặc đăng ký lịch tư vấn khác.</p>
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper" id="library_wrapper_schedule_02">
+											<div class="swiper-wrapper">
+
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon schedule_ongoing"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">12/05/2020</span>
+															<span class="item-schedule_timeframe">4 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule">
+														<div class="item-schedule_icon schedule_ended"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">01/05/2020</span>
+															<span class="item-schedule_timeframe">Đã diễn ra</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">18/05/2020</span>
+															<span class="item-schedule_timeframe">6 khung giờ</span>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">20/05/2020</span>
+															<span class="item-schedule_timeframe">8 khung giờ</span>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-prev-schedule" title="Previous"></div>
+										<div class="swiper-button-next-schedule" title="Next"></div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<button type="button" class="btn-register" data-bs-toggle="modal" data-target="#seminorModal">
+											Đăng ký ngay
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End option -->
+
+
+				<div class="schedule_box" id="schedulebox03">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<p>Bạn đã đăng ký lịch tư vấn này. Hẹn gặp lại.</p>
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper" id="library_wrapper_schedule_03">
+											<div class="swiper-wrapper">
+
+
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon schedule_registered"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">9:00 - 9:45</span>
+														</div>
+													</div>         
+												</div>
+
+
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-prev-schedule" title="Previous"></div>
+										<div class="swiper-button-next-schedule" title="Next"></div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<!-- <button type="button" class="btn-register" data-bs-toggle="modal" data-target="#seminorModal">
+											Đăng ký ngay
+										</button> -->
+
+										<button type="button" class="btn-register btn_registered">
+											Tham gia ngay
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End option -->
+
+
+				<div class="schedule_box" id="schedulebox04">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<p>Lịch tư vấn của bạn đang diễn ra</p>
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper" id="library_wrapper_schedule_04">
+											<div class="swiper-wrapper">
+
+
+												<div class="swiper-slide">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon schedule_ongoing"></div>
+														<div class="item-schedule_timeday">
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">9:00 - 9:45</span>
+														</div>
+													</div>         
+												</div>
+
+
+											</div>
+										</div>
+										<!-- Add Arrows -->
+										<div class="swiper-button-prev-schedule" title="Previous"></div>
+										<div class="swiper-button-next-schedule" title="Next"></div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<button type="button" class="btn-register btn_ongoing">
+											Tham gia ngay
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End option -->
+
+
+			</div>
+		</section>
+
+
+		<br/><br/><br/><br/><br/>
+
+		<section class="schedule-item-1 clearfix">
+			<div class="container clearfix">
+
+				<div class="schedule_box" id="schedulebox04">
+					<div class="schedule_box_line"></div>
+					<div class="schedule_detail">
+						<div class="schedule1 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<h3>Lịch hẹn hợp tác</h3>
+								<p>Doanh nghiệp đăng ký nếu có nhu cầu hợp tác</p>
+							</div>
+						</div>
+						<div class="schedule2 clear_pd_mr">
+							<div class="schedule_wrapper">
+								<div class="schedule_wrapper_box">
+									<div class="schedule_wrapper_box_left">
+										<div class="schedule_wrapper_swiper">
+													<div class="item-schedule btn-selected-time">
+														<div class="item-schedule_icon schedule_ongoing"></div>
+														<div class="item-schedule_timeday">
+															<p>Lịch tư vấn của bạn đang diễn ra</p>
+															<span class="item-schedule_day">10/05/2020</span>
+															<span class="item-schedule_timeframe">9:00 - 9:45</span>
+														</div>
+													</div>
+										</div>
+									</div>
+
+									<div class="schedule_wrapper_box_right">
+
+										<button type="button" class="btn-register btn_ongoing">
+											Tham gia ngay
+										</button>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- End option -->
+
+
+
+			</div>
+		</section>
+
+
+
+		<section class="section-sermina clearfix">
+			<div class="container clearfix">
+				<div class="sermina-inner">
+					<div class="sermina-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Hội thảo trực tuyến</h2>
+							<p class="title-sub"></p>
+						</div>
+					</div>
+					<div class="sermina-box-list">
+						<div class="sermina-list" id="slide_sermina">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="images/business-matching-01.jpg" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_registered"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020 <span class="time-txt registered-txt">Bạn đã đăng ký tham gia</span></span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Đổi mới mô hình tăng trưởng để nâng cao chất lượng tăng trưởng, năng suất lao động
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register btn_registered">Tham gia</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="images/business-matching-02.jpg" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_ongoing"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020 <span class="time-txt ongoing-txt">Đang diễn ra</span></span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Xây dựng hệ thống kết cấu hạ tầng nông nghiệp, nông thôn, hiện đại
+													</a>
+												</h3>
+												<p class="item-description">
+													Đổi mới mô hình tăng trưởng để nâng cao chất lượng tăng trưởng, năng suất lao động
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register btn_ongoing">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="images/business-matching-03.jpg" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao chất lượng nguồn nhân lực của ngành
+													</a>
+												</h3>
+												<p class="item-description">
+													Đổi mới mô hình tăng trưởng để nâng cao chất lượng tăng trưởng, năng suất lao động
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="images/business-matching-02.jpg" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_ended"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020 <span class="time-txt ended-txt">Đã diễn ra</span></span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Xây dựng hệ thống kết cấu hạ tầng nông nghiệp, nông thôn, hiện đại
+													</a>
+												</h3>
+												<p class="item-description">
+													Đổi mới mô hình tăng trưởng để nâng cao chất lượng tăng trưởng, năng suất lao động
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register btn_tookplace">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination-sermina"></div>
+						<div class="swiper-button-prev-sermina"></div>
+						<div class="swiper-button-next-sermina"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="section-sermina clearfix">
+			<div class="container clearfix">
+				<div class="sermina-inner">
+					<div class="sermina-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Hội thảo trực tuyến</h2>
+						</div>
+					</div>
+					<div class="sermina-box-list">
+						<div class="sermina-list" id="slide_sermina">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_registered"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh
+												</p>
+												<a href="#" title="" class="btn-register btn_registered">Tham gia ngay</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_ongoing"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh
+												</p>
+												<a href="#" title="" class="btn-register btn_ongoing">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_ended"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh
+												</p>
+												<a href="#" title="" class="btn-register btn_tookplace">Đã diễn ra</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+
+
+							</div>
+						</div>
+						<div class="swiper-button-prev-sermina"></div>
+						<div class="swiper-button-next-sermina"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+		<section class="section-sermina-item-2 clearfix">
+			<div class="container clearfix">
+				<div class="sermina-inner">
+					<div class="sermina-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Hội thảo trực tuyến</h2>
+						</div>
+					</div>
+					<div class="sermina-box-list">
+						<div class="sermina-list">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon schedule_registered"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh
+												</p>
+												<a href="#" title="" class="btn-register btn_registered">Tham gia ngay</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="section-sermina-item-1 clearfix">
+			<div class="container clearfix">
+				<div class="sermina-inner">
+					<div class="sermina-box-title">
+						<div class="box-title-inner">
+							<h2 class="title-name">Hội thảo trực tuyến</h2>
+						</div>
+					</div>
+					<div class="sermina-box-list">
+						<div class="sermina-list">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="sermina-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="seminar-detail.html" title="">
+													<img src="http://via.placeholder.com/435x261/109E4C/fff" alt="" class="responsive">
+												</a>
+											</div>
+
+											<div class="item-info">
+												<div class="tag-time">
+													<span class="time-icon"></span>
+													<span class="time-date">14:30 - 17:30 | 12/4/2020</span>
+												</div>
+												<h3 class="item-title">
+													<a class="item-title-a" href="seminar-detail.html" title="">
+														Nâng cao năng suất, chất lượng và sức cạnh tranh
+													</a>
+												</h3>
+												<p class="item-description">
+													Ban tổ chức thân mời các giáo viên, đơn vị tư vấn du học, học sinh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh, sinh viên và quý phụ huynh
+												</p>
+												<a href="seminar-detail.html" title="" class="btn-register">Đăng ký</a>
+											</div>
+										</div>
+									</div><!-- End item -->
+								</div>
+
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="section-chatroom">
+			<div class="container clearfix">
+				<div class="row">
+					<iframe src="iframe-chat.html" id="iframe_chat"></iframe>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section-booth-slide-small clearfix" id="section_booth_slide">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list" id="slide_booth_small">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+
+											<div class="header-item">
+												<div class="box-image">
+													<a class="item-image-a" href="booth-detail.html" title="">
+														<img src="images/logo-seller-01.png" alt="" class="responsive">
+													</a>
+												</div>
+												<div class="box-info">
+													<h3 class="item-title">
+														<a class="item-title-a" href="booth-detail.html" title="">
+															gapro
+														</a>
+													</h3>
+													<p class="item-description">
+														<span class="tag-label">Ngành hàng:</span> Nông sản, Trái cây, Phân bón
+													</p>
+												</div>
+											</div>
+											<div class="body-item">
+												<div class="list-products">
+													<p class="title-slide">Sản phẩm tiêu biểu:</p>
+													<div class="list-type-pro slide_product_cate">
+
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+														<div class="item-product">
+															<a class="product-image" href="product-detail.html" title="">
+																<img src="images/product-avt-01.jpg" alt="">
+																<span class="percent-discount">-30%</span>
+															</a>
+															<h3 class="product-name"><a href="product-detail.html" title="">Giấm dừa tự nhiên 500ml - Trắng</a></h3>
+															<div class="box-price">
+																<p class="box">
+																	<span class="price-old">29.000.000đ</span>
+																	<span class="price-sale">27.000.000đ</span>
+																</p>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+							</div>
+						</div><!-- End #slide_booth -->
+
+						<div class="swiper-pagination-booth"></div>
+						<div class="swiper-button-prev-booth"></div>
+						<div class="swiper-button-next-booth"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Start Box cũ -- bỏ đi -->
+		<section class="section-booth-slide clearfix" >
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list" id="slide_booth">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														1. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														2. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-03.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														3. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														4. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														4. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+
+							</div>
+						</div><!-- End #slide_booth -->
+
+						<div class="swiper-pagination-booth"></div>
+						<div class="swiper-button-prev-booth"></div>
+						<div class="swiper-button-next-booth"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END Box cũ -- bỏ đi -->
+
+
+		<section class="type-retailer bg-gradient clearfix">
+			<div class="bg-pattern"></div>
+			<div class="container clearfix">
+				<div class="retailer-inner">
+					<div class="retailer-box-title">
+						<h2 class="title-name">Ngành hàng</h2>
+					</div>
+					<div class="retailer-list" id="slide_retailer">
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-01.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Nguyên liệu phân bón</a></h3>
+									<div class="item-desc">Được công ty Hóa chất phân bón nhập khẩu từ nhiều quốc gia trên thế giới</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-02.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Cung cấp nông sản</a></h3>
+									<div class="item-desc">Cung cấp dịch vụ tư vấn đầu tư phát triển sản xuất, chế biến rau quả, nông, lâm sản</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-03.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Chăn nuôi</a></h3>
+									<div class="item-desc">Cung cấp lợi nhuận và phục vụ cho đời sống sinh hoạt của con người.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-04.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Trồng trọt</a></h3>
+									<div class="item-desc">Là lĩnh vực quan trọng, cung cấp lương thực, thực phẩm cho con người</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-05.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Máy móc</a></h3>
+									<div class="item-desc">Cung cấp lợi nhuận và phục vụ cho đời sống sinh hoạt của con người.</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="retailer-item">
+									<a href="#" title=""><img src="images/nganh-hang-04.png" alt=""></a>
+									<h3 class="item-title"><a href="#" title="">Trồng trọt</a></h3>
+									<div class="item-desc">Là lĩnh vực quan trọng, cung cấp lương thực, thực phẩm cho con người</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="swiper-button-prev-retailer"><i class="fal fa-angle-left"></i></div>
+						<div class="swiper-button-next-retailer"><i class="fal fa-angle-right"></i></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section-booth-slide clearfix">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list" id="slide_booth">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														1. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														2. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-03.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														3. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+								<div class="swiper-slide">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-02.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														4. CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+
+							</div>
+						</div><!-- End #slide_booth -->
+
+						<div class="swiper-pagination-booth"></div>
+						<div class="swiper-button-prev-booth"></div>
+						<div class="swiper-button-next-booth"></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		
+
+
+		<section class="section-booth clearfix">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng nổi bật</h2>
+					</div>
+					<div class="booth-box-list">
+
+						<div class="booth-list">
+							<div class="booth-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="booth-detail.html" title="">
+											<img src="images/logo-seller-01.png" alt="" class="responsive">
+										</a>
+									</div>
+									<div class="item-info">
+										<h3 class="item-title">
+											<a class="item-title-a" href="booth-detail.html" title="">
+												CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+											</a>
+										</h3>
+										<p class="item-description">
+											Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+										</p>
+										<p class="list-type-pro">
+											<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+										</p>
+									</div>
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="booth-detail.html" title="">
+											<img src="images/logo-seller-02.png" alt="" class="responsive">
+										</a>
+									</div>
+									<div class="item-info">
+										<h3 class="item-title">
+											<a class="item-title-a" href="booth-detail.html" title="">
+												CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+											</a>
+										</h3>
+										<p class="item-description">
+											Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+										</p>
+										<p class="list-type-pro">
+											<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+										</p>
+									</div>
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="booth-detail.html" title="">
+											<img src="images/logo-seller-03.png" alt="" class="responsive">
+										</a>
+									</div>
+									<div class="item-info">
+										<h3 class="item-title">
+											<a class="item-title-a" href="booth-detail.html" title="">
+												CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+											</a>
+										</h3>
+										<p class="item-description">
+											Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+										</p>
+										<p class="list-type-pro">
+											<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+										</p>
+									</div>
+								</div>
+							</div><!-- End .booth-item -->
+							<div class="booth-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="booth-detail.html" title="">
+											<img src="images/logo-seller-04.png" alt="" class="responsive">
+										</a>
+									</div>
+									<div class="item-info">
+										<h3 class="item-title">
+											<a class="item-title-a" href="booth-detail.html" title="">
+												CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+											</a>
+										</h3>
+										<p class="item-description">
+											Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+										</p>
+										<p class="list-type-pro">
+											<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+											<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+										</p>
+									</div>
+								</div>
+							</div><!-- End .booth-item -->
+						</div><!-- End .booth-list -->
+
+						<a class="btn-viewall" href="booth-list.html" title="Xem thông tin">Xem tất cả</a>
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="section-booth-list clearfix">
+			<div class="container clearfix">
+				<div class="booth-inner">
+					<div class="booth-box-title">
+						<h2 class="title-name">Gian hàng</h2>
+					</div>
+					<div class="booth-box-list">
+						<div class="booth-list">
+
+							<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+								<div class="col">
+									<div class="booth-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="booth-detail.html" title="">
+													<img src="images/logo-seller-01.png" alt="" class="responsive">
+												</a>
+											</div>
+											<div class="item-info">
+												<h3 class="item-title">
+													<a class="item-title-a" href="booth-detail.html" title="">
+														CÔNG TY CP NÔNG SẢN THỰC PHẨM LÂM ĐỒNG
+													</a>
+												</h3>
+												<p class="item-description">
+													Ngành nghề KD chính: Sản xuất, kinh doanh, nhập khẩu các mặt hàng nông sản
+												</p>
+												<p class="list-type-pro">
+													<span data-bs-toggle="tooltip" title="Rau salat"><img src="images/booth-item-type-01.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Trái cây xuất khẩu"><img src="images/booth-item-type-02.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Các loại cây gia vị"><img src="images/booth-item-type-03.png" alt=""></span>
+													<span data-bs-toggle="tooltip" title="Rau sạch"><img src="images/booth-item-type-04.png" alt=""></span>
+												</p>
+											</div>
+										</div>
+									</div><!-- End .booth-item -->
+								</div>
+							</div>
+
+							<a class="btn-viewall" href="" title="Xem thêm">Xem thêm</a>
+							<div class="box-pagination clearfix">
+								<ul class="pagination pagination-lg">
+									<li><a class="active" href="/edu/danh-sach-truong/page/1#list_partner">1</a></li>
+									<li><a href="/edu/danh-sach-truong/page/2#list_partner">2</a></li>
+									<li><a href="/edu/danh-sach-truong/page/2#list_partner"><i class="fa fa-angle-right"></i></a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+
+		<section class="section-scholarship-02 clearfix">
+			<div class="container clearfix">
+				<div class="news-inner">
+					<div class="scholarship-box-title">
+					</div>
+					<div class="scholarship-box-content">
+						<div class="scholarship-box-list">
+
+							<ul class="nav nav-pills" id="pills-tab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline active" id="pills-timeline-1-tab" data-bs-toggle="pill" href="#pills-timeline-1" role="tab" aria-controls="pills-timeline-1" aria-selected="true">
+										<span class="time-date">13/9/2020</span>
+										<span class="title-item">Khai mạc hội trợ triển lãm nông nghiệp</span>
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline" id="pills-timeline-2-tab" data-bs-toggle="pill" href="#pills-timeline-2" role="tab" aria-controls="pills-timeline-2" aria-selected="false">
+										<span class="time-date">13/9/2020</span>
+										<span class="title-item">Áp dụng công nghệ trong sản xuất nông nghiệp</span>
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline" id="pills-timeline-3-tab" data-bs-toggle="pill" href="#pills-timeline-3" role="tab" aria-controls="pills-timeline-3" aria-selected="false">
+										<span class="time-date">13/9/2020</span>
+										<span class="title-item">Định hướng xuất khẩu nông nghiệp trong thời đại 4.0</span>
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline" id="pills-timeline-4-tab" data-bs-toggle="pill" href="#pills-timeline-4" role="tab" aria-controls="pills-timeline-4" aria-selected="false">
+										<span class="time-date">13/9/2020</span>
+										<span class="title-item">Hợp tác giao lưu cùng các đối tác trong nước</span>
+									</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link item-timeline" id="pills-timeline-5-tab" data-bs-toggle="pill" href="#pills-timeline-5" role="tab" aria-controls="pills-timeline-5" aria-selected="false">
+										<span class="time-date">13/9/2020</span>
+										<span class="title-item">Bế mạc hội trợ triển lãm nông nghiệp</span>
+									</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="pills-tabContent">
+								<div class="tab-pane fade show active" id="pills-timeline-1" role="tabpanel" aria-labelledby="pills-timeline-1-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Khai mạc hội trợ triển lãm nông nghiệp</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-timeline-2" role="tabpanel" aria-labelledby="pills-timeline-2-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Áp dụng công nghệ trong sản xuất nông nghiệp</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-timeline-3" role="tabpanel" aria-labelledby="pills-timeline-3-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Định hướng xuất khẩu nông nghiệp trong thời đại 4.0</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-timeline-4" role="tabpanel" aria-labelledby="pills-timeline-4-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Hợp tác giao lưu cùng các đối tác trong nước</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="pills-timeline-5" role="tabpanel" aria-labelledby="pills-timeline-5-tab">
+									<div class="content-timeline">
+										<h3 class="title-content">Bế mạc hội trợ triển lãm nông nghiệp</h3>
+
+										<p><strong>Thời gian:</strong> 13/9/2020</p>
+										<p>Nhiều mặt hàng nông sản trong tháng 7/2020 đều có giá trị xuất khẩu tăng so với cùng kỳ 2019. Hiện đã có 6 nhóm mặt hàng xuất khẩu trên 1 tỷ USD, đứng đầu là sản phẩm gỗ với trên 6,5 tỷ USD, tăng 6,7% so với cùng kỳ 2019.</p>
+										<p>Thông tin từ Bộ Nông nghiệp và Phát triển nông thôn (NN&PTNT) cho biết, trong tháng 7, giá trị xuất khẩu nông, lâm, thủy sản ước đạt 3,4 tỷ USD, tăng 4,6% so với tháng 6/2020. Lâm nghiệp và thủy sản tiếp tục ghi nhận sự phục hồi sản xuất và lấy lại đà tăng trưởng xuất khẩu.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+
+
+		<!-- Start - Timeline Giao diện cũ -->
+		<section class="section-scholarship clearfix">
+			<div class="container clearfix">
+				<div class="news-inner">
+					<div class="scholarship-box-title">
+						<h2 class="title-name">Chương trình & sự kiện</h2>
+					</div>
+					<div class="scholarship-box-list table-responsive-lg" >
+
+						<div class="scholarship-table">
+							<div class="table100-head">
+								<table class="table">
+									<thead>
+										<tr class="row100 head">
+											<th class="cell100 column1"></th>
+											<th class="cell100 column2">
+												<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M33.8906 20.5488V3.23438C33.8906 2.65182 33.4185 2.17969 32.8359 2.17969H27.4922V1.05469C27.4922 0.472137 27.0201 0 26.4375 0C25.8549 0 25.3828 0.472137 25.3828 1.05469V2.17969H21.1641V1.05469C21.1641 0.472137 20.6919 0 20.1094 0C19.5268 0 19.0547 0.472137 19.0547 1.05469V2.17969H14.8359V1.05469C14.8359 0.472137 14.3638 0 13.7812 0C13.1987 0 12.7266 0.472137 12.7266 1.05469V2.17969H8.50781V1.05469C8.50781 0.472137 8.03568 0 7.45312 0C6.87057 0 6.39844 0.472137 6.39844 1.05469V2.17969H1.05469C0.472137 2.17969 0 2.65182 0 3.23438V30.7266C0 31.3091 0.472137 31.7812 1.05469 31.7812H18.6191C20.3242 34.3232 23.2237 36 26.5078 36C31.7417 36 36 31.7417 36 26.5078C36 24.2529 35.209 22.1792 33.8906 20.5488ZM6.39844 4.28906V5.34375C6.39844 5.9263 6.87057 6.39844 7.45312 6.39844C8.03568 6.39844 8.50781 5.9263 8.50781 5.34375V4.28906H12.7266V5.34375C12.7266 5.9263 13.1987 6.39844 13.7812 6.39844C14.3638 6.39844 14.8359 5.9263 14.8359 5.34375V4.28906H19.0547V5.34375C19.0547 5.9263 19.5268 6.39844 20.1094 6.39844C20.6919 6.39844 21.1641 5.9263 21.1641 5.34375V4.28906H25.3828V5.34375C25.3828 5.9263 25.8549 6.39844 26.4375 6.39844C27.0201 6.39844 27.4922 5.9263 27.4922 5.34375V4.28906H31.7812V8.50781H2.10938V4.28906H6.39844ZM2.10938 29.6719V10.6172H31.7812V18.6191C30.272 17.607 28.4576 17.0156 26.5078 17.0156C23.1751 17.0156 20.2385 18.7424 18.5444 21.3478C18.4018 21.2758 18.2411 21.2344 18.0703 21.2344H15.9609C15.3784 21.2344 14.9062 21.7065 14.9062 22.2891C14.9062 22.8716 15.3784 23.3438 15.9609 23.3438H17.5586C17.3205 24.0156 17.1557 24.722 17.0747 25.4531H15.9609C15.3784 25.4531 14.9062 25.9253 14.9062 26.5078C14.9062 27.0904 15.3784 27.5625 15.9609 27.5625H17.0747C17.1557 28.2936 17.3202 29.0001 17.5586 29.6719H2.10938ZM26.5078 33.8906C22.4368 33.8906 19.125 30.5788 19.125 26.5078C19.125 22.4368 22.4368 19.125 26.5078 19.125C30.5788 19.125 33.8906 22.4368 33.8906 26.5078C33.8906 30.5788 30.5788 33.8906 26.5078 33.8906Z" fill="white"/>
+													<path d="M30.7266 25.4531H27.5625V22.2891C27.5625 21.7065 27.0904 21.2344 26.5078 21.2344C25.9253 21.2344 25.4531 21.7065 25.4531 22.2891V26.5078C25.4531 27.0904 25.9253 27.5625 26.5078 27.5625H30.7266C31.3091 27.5625 31.7812 27.0904 31.7812 26.5078C31.7812 25.9253 31.3091 25.4531 30.7266 25.4531Z" fill="white"/>
+													<path d="M9.5625 12.7969H7.45312C6.87057 12.7969 6.39844 13.269 6.39844 13.8516C6.39844 14.4341 6.87057 14.9062 7.45312 14.9062H9.5625C10.1451 14.9062 10.6172 14.4341 10.6172 13.8516C10.6172 13.269 10.1451 12.7969 9.5625 12.7969Z" fill="white"/>
+													<path d="M9.5625 17.0156H7.45312C6.87057 17.0156 6.39844 17.4878 6.39844 18.0703C6.39844 18.6529 6.87057 19.125 7.45312 19.125H9.5625C10.1451 19.125 10.6172 18.6529 10.6172 18.0703C10.6172 17.4878 10.1451 17.0156 9.5625 17.0156Z" fill="white"/>
+													<path d="M9.5625 21.2344H7.45312C6.87057 21.2344 6.39844 21.7065 6.39844 22.2891C6.39844 22.8716 6.87057 23.3438 7.45312 23.3438H9.5625C10.1451 23.3438 10.6172 22.8716 10.6172 22.2891C10.6172 21.7065 10.1451 21.2344 9.5625 21.2344Z" fill="white"/>
+													<path d="M15.9609 14.9062H18.0703C18.6529 14.9062 19.125 14.4341 19.125 13.8516C19.125 13.269 18.6529 12.7969 18.0703 12.7969H15.9609C15.3784 12.7969 14.9062 13.269 14.9062 13.8516C14.9062 14.4341 15.3784 14.9062 15.9609 14.9062Z" fill="white"/>
+													<path d="M15.9609 19.125H18.0703C18.6529 19.125 19.125 18.6529 19.125 18.0703C19.125 17.4878 18.6529 17.0156 18.0703 17.0156H15.9609C15.3784 17.0156 14.9062 17.4878 14.9062 18.0703C14.9062 18.6529 15.3784 19.125 15.9609 19.125Z" fill="white"/>
+													<path d="M9.5625 25.4531H7.45312C6.87057 25.4531 6.39844 25.9253 6.39844 26.5078C6.39844 27.0904 6.87057 27.5625 7.45312 27.5625H9.5625C10.1451 27.5625 10.6172 27.0904 10.6172 26.5078C10.6172 25.9253 10.1451 25.4531 9.5625 25.4531Z" fill="white"/>
+													<path d="M24.3984 14.9062H26.5078C27.0904 14.9062 27.5625 14.4341 27.5625 13.8516C27.5625 13.269 27.0904 12.7969 26.5078 12.7969H24.3984C23.8159 12.7969 23.3438 13.269 23.3438 13.8516C23.3438 14.4341 23.8159 14.9062 24.3984 14.9062Z" fill="white"/>
+												</svg>
+
+											</th>
+											<th class="cell100 column3">NỘI DUNG CHƯƠNG TRÌNH</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+
+							<div class="table100-body">
+								<table class="table">
+									<tbody>
+										<tr class="row100 body">
+											<td class="cell100 column1" rowspan="5">
+												<a class="btn-select-time active" href="#" title="NGÀY 1 - 20/5/2020">
+													<span class="day">NGÀY 1</span>
+													<span class="date">20/5/2020</span>
+												</a>
+
+												<a class="btn-select-time" href="#" title="NGÀY 2 - 21/5/2020">
+													<span class="day">NGÀY 2</span>
+													<span class="date">21/5/2020</span>
+												</a>
+											</td>
+											<td class="cell100" colspan="2">
+
+												<div class="wrap-table-child">
+													<table class="table table-child">
+														<tr class="row200">
+															<td class="cell200 column11"><span class="event-time">8:00 - 9:30</span></td>
+															<td class="cell200 column12">
+																<div class="cell-content">
+																	<div class="cell-content-left">
+																		<p class="title-cell">Nâng cao năng suất, chất lượng và sức cạnh tranh</p>
+																		<div class="content-cell">01. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</div>																		
+																	</div>
+																	<div class="cell-content-right">
+																		<span class="btn-colsnap"><i class="fal fa-angle-down"></i></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+
+														<tr class="row200">
+															<td class="cell200 column11"><span class="event-time">10:00 - 10:45</span></td>
+															<td class="cell200 column12">
+																<div class="cell-content">
+																	<div class="cell-content-left">
+																		<p class="title-cell">Xây dựng hệ thống kết cấu hạ tầng nông nghiệp hiện đại</p>
+																		<div class="content-cell">02. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</div>																	
+																	</div>
+																	<div class="cell-content-right">
+																		<span class="btn-colsnap"><i class="fal fa-angle-down"></i></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr class="row200">
+															<td class="cell200 column11"><span class="event-time">13:00 - 14:20</span></td>
+															<td class="cell200 column12">
+																<div class="cell-content">
+																	<div class="cell-content-left">
+																		<p class="title-cell">Nâng cao chất lượng nguồn nhân lực của ngành</p>
+																		<div class="content-cell">03. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</div>																	
+																	</div>
+																	<div class="cell-content-right">
+																		<span class="btn-colsnap"><i class="fal fa-angle-down"></i></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr class="row200">
+															<td class="cell200 column11"><span class="event-time">16:00 - 17:30</span></td>
+															<td class="cell200 column12">
+																<div class="cell-content">
+																	<div class="cell-content-left">
+																		<p class="title-cell">Đầu tư sản xuất nông sản sạch tại Việt Nam: Mỏ vàng hay… hang hổ?</p>
+																		<div class="content-cell">04. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</div>																	
+																	</div>
+																	<div class="cell-content-right">
+																		<span class="btn-colsnap"><i class="fal fa-angle-down"></i></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+														<tr class="row200">
+															<td class="cell200 column11"><span class="event-time">18:00 - 19:30</span></td>
+															<td class="cell200 column12">
+																<div class="cell-content">
+																	<div class="cell-content-left">
+																		<p class="title-cell">Đầu tư sản xuất nông sản sạch tại Việt Nam: Mỏ vàng hay… hang hổ?</p>
+																		<div class="content-cell">05. Giáo sư Drew Faust đã có cuộc gặp gỡ với giảng viên và cựu học viên của Chương trình Giảng dạy Kinh tế Fulbright (FETP), chương trình đào tạo Chính sách công hợp tác giữa trường Harvard Kennedy, Đại học Harvard và trường Đại học Kinh tế Thành phố Hồ Chí Minh.</div>																	
+																	</div>
+																	<div class="cell-content-right">
+																		<span class="btn-colsnap"><i class="fal fa-angle-down"></i></span>
+																	</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+
+											</td>
+										</tr>
+
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</section>
+		<!-- End - Timeline Giao diện cũ -->
+
+
+		<section class="section-unit clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					<div class="unit-box-title">
+						<h2 class="title-name">Đơn vị thực hiện</h2>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="unit-list" id="slide_unit">
+							<div class="swiper-wrapper">
+
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-01.png" alt=""> -->
+													<img src="images/unit-01-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-02.png" alt=""> -->
+													<img src="images/unit-02-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-03.png" alt=""> -->
+													<img src="images/unit-03-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-04.png" alt=""> -->
+													<img src="images/unit-04-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-05.png" alt=""> -->
+													<img src="images/unit-05-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="unit-item">
+										<div class="item-inner">
+											<div class="item-image">
+												<a class="item-image-a" href="" title="">
+													<!-- <img src="images/unit-05.png" alt=""> -->
+													<img src="images/unit-05-highlight.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="swiper-button-prev-unit"><i class="fal fa-angle-left"></i></div>
+						<div class="swiper-button-next-unit"><i class="fal fa-angle-right"></i></div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+		<section class="ads-fluid text-center clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="ads-fluid-inner">
+
+						<!-- google ads embed this here -->
+						<img src="images/ads.jpg" alt="">
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	
+
+
+	<footer class="footer footer_area clearfix" id="footer_area">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		
+
+		<!-- Modal -->
+		<div class="modal modal-seminor fade" id="seminorModal" tabindex="-1" role="dialog" aria-labelledby="seminorModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">ĐĂNG KÝ THAM GIA TƯ VẤN</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+
+
+							<form>
+								<div class="form-group row">
+									<label for="input_name" class="col-sm-4 col-form-label">Họ tên</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="input_name" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_email" class="col-sm-4 col-form-label">Email</label>
+									<div class="col-sm-8">
+										<input type="email" class="form-control" id="input_email" required>
+										<span class="help-block">Thông báo chưa hợp lệ</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_phone" class="col-sm-4 col-form-label">Số điện thoại</label>
+									<div class="col-sm-8">
+										<input type="number" class="form-control" id="input_phone" required>
+										<span class="help-block">Thông báo chưa hợp lệ</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_sex" class="col-sm-4 col-form-label">Giới tính</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_sex" required>
+											<option>Nam</option>
+											<option>Nữ</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_yearold" class="col-sm-4 col-form-label">Tuổi</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_yearold" required>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+											<option value="32">32</option>
+											<option value="33">33</option>
+											<option value="34">34</option>
+											<option value="35">35</option>
+											<option value="36">36</option>
+											<option value="37">37</option>
+											<option value="38">38</option>
+											<option value="39">39</option>
+											<option value="40">40</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_school" class="col-sm-4 col-form-label">Trường đang học</label>
+									<div class="col-sm-8">
+										<input type="text" class="form-control" id="input_school" placeholder="Đại học FPT" required>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_majors" class="col-sm-4 col-form-label">Ngành mong muốn</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_majors" required>
+											<option>Công nghệ thông tin</option>
+											<option>Quản lý khách sạn</option>
+											<option>Kinh tế và Kinh doanh</option>
+											<option>Du lịch và Lữ hành</option>
+										</select>
+										<div class="invalid-feedback">Example invalid custom select feedback</div>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_time" class="col-sm-4 col-form-label">Thời gian tư vấn</label>
+									<div class="col-sm-8">
+										<select class="form-control" id="input_time" required>
+											<option>12/4/2020</option>
+											<option>13/4/2020</option>
+											<option>14/4/2020</option>
+											<option>15/4/2020</option>
+											<option>16/4/2020</option>
+										</select>
+
+										<div class="wrap-options-hour">
+											<div class="wrap-options-hour-list">
+
+												<div class="item-option item-option-03">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_01" value="8:00 - 8:45" disabled>
+													<label for="input_hour_01">
+														<span>8:00 - 8:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_02" value="9:00 - 9:45" checked="checked">
+													<label for="input_hour_02">
+														<span>9:00 - 9:45</span>
+													</label>
+												</div>
+												<div class="item-option item-option-02">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_03" value="10:00 - 10:45">
+													<label for="input_hour_03">
+														<span>10:00 - 10:45</span>
+													</label>
+												</div>
+												<div class="item-option item-option-02">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_04" value="10:00 - 10:45">
+													<label for="input_hour_04">
+														<span>11:00 - 11:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_05" value="10:00 - 10:45" disabled>
+													<label for="input_hour_05">
+														<span>12:00 - 12:45</span>
+													</label>
+												</div>
+
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_06" value="10:00 - 10:45" disabled>
+													<label for="input_hour_06">
+														<span>13:00 - 13:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_07" value="10:00 - 10:45">
+													<label for="input_hour_07">
+														<span>14:00 - 14:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_08" value="10:00 - 10:45" disabled>
+													<label for="input_hour_08">
+														<span>15:00 - 15:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_09" value="10:00 - 10:45" disabled>
+													<label for="input_hour_09">
+														<span>16:00 - 16:45</span>
+													</label>
+												</div>
+												<div class="item-option">
+													<input class="form-check-input" type="radio" name="input_hour" id="input_hour_10" value="10:00 - 10:45">
+													<label for="input_hour_10">
+														<span>17:00 - 17:45</span>
+													</label>
+												</div>
+
+											</div>
+											<div class="wrap-options-hour-note">
+												<div class="item-note item-note-01">
+													<span></span><span>Khung giờ bạn chọn</span>
+												</div>
+												<div class="item-note item-note-02">
+													<span></span><span>Khung giờ trống</span>
+												</div>
+												<div class="item-note item-note-03">
+													<span></span><span>Khung giờ đầy</span>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="form-group row">
+									<label for="input_file" class="col-sm-4 col-form-label">File đính kèm:</label>
+									<div class="col-sm-8">
+										<p>Bạn hãy gửi trước hồ sơ của bạn để trường có thể xem trước & tư vấn chính xác cho bạn</p>
+										<div class="wrap-upload-file">
+											<input type="file" class="input-file-upload" name="file" id="input_file" multiple accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,text/plain, application/pdf, image/*" onchange="javascript:updateList()">
+											<label class="input-file-label" for="input_file">
+												<span><i class="fal fa-upload"></i></span>
+												<span>Kéo thả tập tin vào đây hoặc chọn tập tin để tải lên</span>
+											</label>
+											<div id="fileList">
+												<ul>
+													<li><span class="file-name">icon-cao-dang.png</span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+													<li><span class="file-name">icon-cao-dang.png<span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+													<li><span class="file-name">icon-dai-hoc.png<span> <a class="btn-remove" href="#" title="Xoá file"> <i class="fal fa-trash-alt"></i></a></li>
+												</ul>
+											</div>
+											<div class="invalid-feedback">Thông báo chưa hợp lệ</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="input_content" class="col-sm-4 col-form-label">Nội dung cần tư vấn:</label>
+									<div class="col-sm-8">
+										<textarea class="form-control" id="input_content" rows="4" placeholder=""></textarea>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-4 col-form-label"></label>
+									<div class="col-sm-8">
+										<button type="submit" class="btn btn-primary">ĐĂNG KÝ TƯ VẤN</button>
+									</div>
+								</div>
+							</form>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js"></script>
+	
+	<script>
+		$(document).ready(function () {
+			$("#countdown_time").countdown("2020/06/10 00:07:00", function(event) {
+				$(".time_day").text(
+					event.strftime('%D')
+				);
+				$(".time_hour").text(
+					event.strftime('%H')
+				);
+				$(".time_minute").text(
+					event.strftime('%M')
+				);
+				$(".time_seconds").text(
+					event.strftime('%S')
+				);
+			});
+		});
+
+		updateList = function() {
+			var input = document.getElementById('input_file');
+			var output = document.getElementById('fileList');
+			var children = "";
+			for (var i = 0; i < input.files.length; ++i) {
+				children += '<li>' + input.files.item(i).name + '</li>';
+			}
+			output.innerHTML = '<ul>'+children+'</ul>';
+		}
+
+	</script>
+
+
+	<link type="text/css" rel="stylesheet" href="css/chatbot.css" />
+	<div class="popup-chat-bot-ver-2" id="wrap_chatbot">
+		<div class="popup-inner">
+			<div class="popup-head">
+				<div class="popup-head-left pull-left">
+					<div class="bot-img">
+						<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.2188 14.9531C15.9599 14.9531 15.75 15.163 15.75 15.4219V18.6562C15.75 19.9486 14.6986 21 13.4062 21H8.34525C8.08645 21 7.87669 21.2097 7.8765 21.4684L7.87584 22.4004L6.75703 21.2816C6.68461 21.1154 6.51886 21 6.32714 21H3.28125C1.98891 21 0.9375 19.9486 0.9375 18.6562V11.4375C0.9375 10.1452 1.98891 9.09375 3.28125 9.09375H8.01562C8.27447 9.09375 8.48438 8.88389 8.48438 8.625C8.48438 8.36611 8.27447 8.15625 8.01562 8.15625H3.28125C1.47197 8.15625 0 9.62822 0 11.4375V18.6562C0 20.4655 1.47197 21.9375 3.28125 21.9375H6.08709L8.0123 23.8627C8.10197 23.9524 8.22183 24 8.34384 24C8.40417 24 8.46506 23.9883 8.52295 23.9644C8.69812 23.8919 8.81236 23.7211 8.8125 23.5316L8.81363 21.9375H13.4062C15.2155 21.9375 16.6875 20.4655 16.6875 18.6562V15.4219C16.6875 15.163 16.4776 14.9531 16.2188 14.9531Z" fill="white"/>
+							<path d="M17.187 0H16.0006C12.2438 0 9.1875 3.05634 9.1875 6.81309C9.1875 10.5698 12.2438 13.6261 16.0005 13.6261H17.1869C17.7733 13.6261 18.3536 13.5517 18.9161 13.4045L20.6686 15.156C20.7583 15.2456 20.8781 15.2932 21.0001 15.2932C21.0605 15.2932 21.1215 15.2815 21.1794 15.2575C21.3546 15.1849 21.4688 15.014 21.4688 14.8245V12.1125C22.2107 11.5116 22.8271 10.7525 23.2597 9.90455C23.751 8.94145 24 7.90134 24 6.81309C24 3.05634 20.9437 0 17.187 0ZM20.718 11.5095C20.6004 11.598 20.5312 11.7367 20.5312 11.8839V13.6933L19.3842 12.5468C19.2949 12.4576 19.1752 12.4096 19.0528 12.4096C19.0068 12.4096 18.9604 12.4164 18.9151 12.4303C18.3572 12.6018 17.7758 12.6887 17.187 12.6887H16.0006C12.7607 12.6887 10.125 10.0529 10.125 6.81309C10.125 3.57328 12.7608 0.9375 16.0006 0.9375H17.187C20.4268 0.9375 23.0625 3.57328 23.0625 6.81309C23.0625 8.67548 22.208 10.3873 20.718 11.5095Z" fill="white"/>
+							<path d="M18.7045 5.12908C18.6369 4.14775 17.8458 3.35669 16.8644 3.28905C16.3081 3.25084 15.7772 3.43848 15.3708 3.81784C14.9701 4.19195 14.7402 4.7208 14.7402 5.26881C14.7402 5.5277 14.9501 5.73756 15.209 5.73756C15.4678 5.73756 15.6777 5.5277 15.6777 5.26881C15.6777 4.97542 15.796 4.7035 16.0105 4.5032C16.225 4.30309 16.5052 4.20405 16.8 4.22439C17.317 4.26002 17.7336 4.67669 17.7692 5.19358C17.8052 5.71563 17.4627 6.17697 16.9549 6.29059C16.5434 6.38266 16.2561 6.74022 16.2561 7.16008V8.28625C16.2561 8.54514 16.466 8.755 16.7248 8.755C16.9837 8.755 17.1936 8.54514 17.1935 8.28625V7.19753C18.1381 6.96935 18.7718 6.10506 18.7045 5.12908Z" fill="white"/>
+							<path d="M17.056 9.80922C16.9688 9.72203 16.8479 9.67188 16.7246 9.67188C16.6013 9.67188 16.4804 9.72203 16.3932 9.80922C16.306 9.89641 16.2559 10.0173 16.2559 10.1406C16.2559 10.2644 16.3061 10.3853 16.3932 10.4725C16.4804 10.5597 16.6013 10.6094 16.7246 10.6094C16.8479 10.6094 16.9688 10.5597 17.056 10.4725C17.1432 10.3848 17.1934 10.2644 17.1934 10.1406C17.1934 10.0173 17.1432 9.89641 17.056 9.80922Z" fill="white"/>
+							<path d="M12.8906 14.5312H3C2.74116 14.5312 2.53125 14.7411 2.53125 15C2.53125 15.2589 2.74116 15.4688 3 15.4688H12.8906C13.1495 15.4688 13.3594 15.2589 13.3594 15C13.3594 14.7411 13.1495 14.5312 12.8906 14.5312Z" fill="white"/>
+							<path d="M13.222 17.2936C13.1348 17.2064 13.0139 17.1562 12.8906 17.1562C12.7673 17.1562 12.6464 17.2064 12.5592 17.2936C12.472 17.3808 12.4219 17.5017 12.4219 17.625C12.4219 17.7483 12.472 17.8692 12.5592 17.9564C12.6464 18.0436 12.7673 18.0938 12.8906 18.0938C13.0139 18.0938 13.1348 18.0436 13.222 17.9564C13.3092 17.8692 13.3594 17.7488 13.3594 17.625C13.3594 17.5017 13.3092 17.3808 13.222 17.2936Z" fill="white"/>
+							<path d="M11.0469 17.1562H3C2.74116 17.1562 2.53125 17.3661 2.53125 17.625C2.53125 17.8839 2.74116 18.0938 3 18.0938H11.0469C11.3058 18.0938 11.5156 17.8839 11.5156 17.625C11.5156 17.3661 11.3057 17.1562 11.0469 17.1562Z" fill="white"/>
+							<path d="M9.84375 11.9062H3C2.74116 11.9062 2.53125 12.1161 2.53125 12.375C2.53125 12.6339 2.74116 12.8438 3 12.8438H9.84375C10.1026 12.8438 10.3125 12.6339 10.3125 12.375C10.3125 12.1161 10.1026 11.9062 9.84375 11.9062Z" fill="white"/>
+						</svg> 
+					</div>
+					<div class="bot-name">Chat với gian hàng</div>
+				</div>
+				<div class="popup-head-right pull-right">
+					<button data-widget="remove" id="removeClass" class="chat-header-button pull-right" type="button"><i class="fas fa-power-off"></i></button>
+				</div>
+			</div>
+
+			<div class="popup-content">
+
+				<div class="popup-content-messages">
+					<div class="messages-header">
+						<div class="box-header-name">
+							<span class="name">GAPRO VIETNAM</span>
+							<span class="status">Đang truy cập</span>
+						</div>
+					</div>
+
+					<div class="messages-content">
+							<div class="direct-chat-messages" id="js_table_scroll_h">
+
+									<ul class="chat_box">
+										<li class="sent">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Yêu thương cho đi là yêu thương có thể giữ được mãi mãi.</p>
+												<span class="at-time">15:05 AM</span>
+											</div>
+										</li>
+										<li class="replies">
+											<div class="item-inner">
+												<img src="images/logo-seller-01.png" alt="" />
+												<p>Sự chia sẻ và tình yêu thương là điều quý giá nhất trên đời.</p>
+												<span class="at-time">15:30 AM</span>
+											</div>
+										</li>
+										<li class="break-line">
+												<div class="line"></div>
+												<span class="line-time">Thứ hai, 30/03/2020</span>
+										</li>
+										<li class="sent">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Bầu trời trong xanh thăm thẳm, không một gợn mây.</p>
+												<span class="at-time">18:00 AM</span>
+											</div>
+										</li>
+										<li class="sent">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Excuses don't win championships.</p>
+												<span class="at-time">9:15 AM</span>
+											</div>
+										</li>
+										<li class="break-line">
+												<div class="line"></div>
+												<span class="line-time">Thứ sáu, 03/03/2020</span>
+										</li>
+										<li class="replies">
+											<div class="item-inner">
+												<img src="images/logo-seller-01.png" alt="" />
+												<p>Chào bạn<br>Bạn có thắc mắc gì về sản phẩm?</p>
+												<span class="at-time">8:54 AM</span>
+											</div>
+										</li>
+										<li class="sent">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Mình cần hỏi về giải pháp hợp tác kinh doanh</p>
+												<span class="at-time">9:10 AM</span>
+											</div>
+										</li>
+										<li class="replies">
+											<div class="item-inner">
+												<img src="images/logo-seller-01.png" alt="" />
+												<p>Công ty mình có hội thảo về chủ đề hợp tác kinh doanh vào chiều nay</p>
+												<span class="at-time">10:30 AM</span>
+											</div>
+										</li>
+										<li class="replies">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Bạn có muốn tham gia?</p>
+												<span class="at-time">11:10 AM</span>
+											</div>
+										</li>
+										<li class="sent">
+											<div class="item-inner">
+												<img src="http://emilcarlsson.se/assets/mikeross.png" alt="" />
+												<p>Ok, vậy cho mình thông tin thời gian nhé</p>
+												<span class="at-time">14:40 AM</span>
+											</div>
+										</li>
+									</ul>
+
+							</div>
+
+					</div>
+
+					<div class="messages-footer">
+						<textarea class="chat_input autofit" id="status_message" placeholder="Nhập nội dung..." rows="1" name="message" value="" spellcheck="false"></textarea>
+						<div class="btn-footer">
+							<button class="btn-icon"><i class="far fa-camera"></i> </button>
+							<button class="btn-icon"><i class="far fa-smile"></i> </button>
+							<button class="btn-icon"><i class="far fa-paperclip"></i> </button>
+							<button class="btn-icon pull-right chat_submit"><i class="fas fa-paper-plane"></i> </button>
+						</div>
+					</div>
+				</div>
+				<div class="popup-content-list-store">
+					<div class="list-store-header">
+						<form action="" class="form-search">
+							<div class="frm-input-search">
+								<input type="search" name="input-search" value="" placeholder="Tìm theo tên khách hàng">
+							</div>
+							<div class="frm-input-select">
+								<select name="input-select" value="">
+									<option value="0">Tất cả</option>
+									<option value="1">a Option 01</option>
+									<option value="2">b Option 02</option>
+									<option value="3">c Option 03</option>
+									<option value="4">d Option 04</option>
+								</select>
+							</div>
+						</form>
+					</div>
+
+					<ul>
+						<li class="contact">
+							<div class="wrap">
+								<span class="contact-status online"></span>
+								<img src="http://emilcarlsson.se/assets/louislitt.png" alt="">
+								<div class="meta">
+									<p class="name">Louis Litt</p>
+									<p class="preview">You just got LITT up, Mike.</p>
+								</div>
+								<div class="recent-time">
+									29/5/2020
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<span class="contact-status busy"></span>
+								<img src="http://emilcarlsson.se/assets/harveyspecter.png" alt="">
+								<div class="meta">
+									<p class="name">Harvey Specter</p>
+									<p class="preview">I was thinking that we could have chicken tonight, sounds good?</p>
+								</div>
+								<div class="recent-time">
+									10:30 AM
+								</div>
+							</div>
+						</li>
+						<li class="contact active">
+							<div class="wrap">
+								<span class="contact-status online"></span>
+								<img src="http://emilcarlsson.se/assets/rachelzane.png" alt="">
+								<div class="meta">
+									<p class="name">Rachel Zane</p>
+									<p class="preview"><span>You:</span> Hãy bắt đầu làm những việc cần thiết, sau đó làm những việc bạn có thể, và tự nhiên bạn có thể làm những điều không thể</p>
+								</div>
+								<div class="recent-time">
+									10:30 AM
+								</div>
+							</div>
+						</li>
+						<li class="contact">
+							<div class="wrap">
+								<span class="contact-status away"></span>
+								<img src="http://emilcarlsson.se/assets/donnapaulsen.png" alt="">
+								<div class="meta">
+									<p class="name">Donna Paulsen</p>
+									<p class="preview">Mike, I know everything! I'm Donna..</p>
+								</div>
+								<div class="recent-time">
+									10:30 AM
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<script src="js/chatbot.js" charset="UTF-8" defer></script>
+
+	<script>
+		$(document).ready(function() {
+			$(".direct-chat-messages").animate({ scrollTop: $('.direct-chat-messages>ul').height() }, "fast");
+
+
+			const chath = document.querySelector('#js_table_scroll_h');
+
+			if($(chath)[0]){
+				const psh = new PerfectScrollbar(chath);
+			}
+		});
+		$(function(){
+
+			$("#addClass").click(function (e) {
+				e.preventDefault();
+				$('#wrap_chatbot').addClass('popup-box-on');
+				console.log('them abc d');
+			});
+
+			$("#removeClass").click(function () {
+				$('#wrap_chatbot').removeClass('popup-box-on');
+				console.log('xoa abc d');
+			});
+		})
+
+		$(function(){
+			$("#removeClass").click(function(e) {
+				if ($(".popup-content").is(":visible")) {
+					$(".bot-status").text("+")
+				} else {
+					$(".bot-status").text("-")
+			}
+			$(".popup-content").slideToggle("slow");
+				return false
+			});
+		});
+	</script>
+	
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

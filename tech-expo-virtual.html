@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="telephone=no">
+	<title>Nông nghiệp số - Agrifuture Tech Expo</title>
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<meta name="keywords" content="nông nghiệp số, nong nghiep so"><meta name="description" content="Trang hội chợ nông nghiệp, nông sản trực tuyến của VnExpress. Kết nối kinh doanh, hội thảo và triển lãm hội chợ trực tuyến, sàn giao dịch thương mại điện tử mua bán">
+	<link rel="shortcut icon" href="images/favicon.png">
+	
+	<meta property="og:url"           content="https://fair.vnexpress.net/agriculture" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Agriculture TechExpo" />
+	<meta property="og:description"   content="" />
+	<meta property="og:image"         content="" />
+
+	<!-- @@include('module/headmeta.html') -->
+
+	
+    
+
+	<!-- <link rel="stylesheet" href="css/list-library.css">
+	<link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/styles.min.css?v=99">
+
+	
+    
+</head>
+<body class="agriTechExpo" id="body_agri" data-height-small="false" itemscope itemtype="http://schema.org/WebPage">
+	<div class="load"><span class="loading"></span></div>
+
+
+	<header class="header header-scroll">
+		<div class="header-top">
+			<div class="container clearfix">
+				<div class="menu-top-inner">
+					<div class="group-btn">
+						<div class="btn-back">
+							<a href="https://vnexpress.net" title="Quay lại VnExpress"><i class="fal fa-arrow-left"></i> Quay lại VnExpress</a>
+						</div>
+						<div class="list-item-socail">
+							<p>Chia sẻ <a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+						<div class="box-user-login">
+
+
+							<!-- Start user chưa đăng nhập -->
+								<!-- <div class="user-not-logged-in">
+									<span class="btn-sign-in">Đăng nhập</span>
+								</div> -->
+							<!-- End user chưa đăng nhập -->
+
+							<!-- Start user đã đăng nhập -->
+								<div class="user-logged">
+									<div class="user-name">
+										<span class="avata">A</span>
+										<span class="name-value">Anh Tuấn</span>
+										<div class="dropdown-user" id="dropdown-user">
+											<ul class="myvne_user_status">
+												<li><a href="#" title="Tài khoản của tôi">Tài khoản của tôi</a></li>
+												<li><a href="#" title="Hoạt động bình luận">Hoạt động bình luận</a></li>
+												<li><a href="javascript:;" title="Thoát">Thoát</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="user-notify">
+										<a href="" title="Bạn có 2 thông báo mới">
+											<i class="fas fa-bell"></i>
+											<span class="notify-number">2</span>
+										</a>
+									</div>
+								</div>
+							<!-- End user đã đăng nhập -->
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-main">
+			<div class="container clearfix">
+						
+				<div class="header-left">
+					<a class="logo" href="index.html" title="">
+						<img src="images/logo.svg" alt="">
+					</a>
+				</div>
+
+				<div class="header-right">
+					<nav>
+						<ul>
+							<li>
+								<a href="index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Gian hàng</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="3d-virtual-reality.html" title="">3D Virtual Reality</a>
+							</li>
+							<li>
+								<a href="tech-expo-virtual.html" title="">3D Hall</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+							<li>
+								<a class="btn-show-search" id="btn_show_search" onclick="showFormSearch();" href="javascript:void(0);" title="Nhập từ khóa cần tìm..."></a>
+								<form class="form-search-top" id="frm_search" action="search.html" method="post">
+									<div class="form-group-inline">
+										<input type="search" name="key_search" placeholder="Tìm kiếm..." class="input-search" id="input_search">
+										<button class="btn-search"></button>
+									</div>
+								</form>
+							</li>
+							<li>
+								<a class="item-cart lengkeng" href="cart.html" title="Giỏ hàng">
+									<span class="number-count">3</span>
+									<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip2)">
+										<path d="M9.07812 18.1018H23.8987C24.2657 18.1018 24.5876 17.8591 24.6869 17.5066L27.9684 6.02203C28.0389 5.77444 27.9906 5.50848 27.8353 5.30276C27.6798 5.09769 27.438 4.97656 27.1799 4.97656H7.18436L6.59796 2.33789C6.51465 1.96213 6.1814 1.69531 5.79688 1.69531H0.820312C0.367004 1.69531 0 2.06232 0 2.51562C0 2.96915 0.367004 3.33594 0.820312 3.33594H5.13849L8.1008 16.666C7.22922 17.045 6.61719 17.9125 6.61719 18.9221C6.61719 20.279 7.72119 21.383 9.07812 21.383H23.8987C24.3522 21.383 24.719 21.0162 24.719 20.5627C24.719 20.1094 24.3522 19.7424 23.8987 19.7424H9.07812C8.62631 19.7424 8.25781 19.3748 8.25781 18.9221C8.25781 18.4694 8.62631 18.1018 9.07812 18.1018Z" fill="#109E4C"/>
+										<path d="M8.25781 23.8438C8.25781 25.2009 9.36182 26.3047 10.719 26.3047C12.0759 26.3047 13.1799 25.2009 13.1799 23.8438C13.1799 22.4868 12.0759 21.3828 10.719 21.3828C9.36182 21.3828 8.25781 22.4868 8.25781 23.8438Z" fill="#109E4C"/>
+										<path d="M19.7971 23.8438C19.7971 25.2009 20.9011 26.3047 22.2581 26.3047C23.6152 26.3047 24.719 25.2009 24.719 23.8438C24.719 22.4868 23.6152 21.3828 22.2581 21.3828C20.9011 21.3828 19.7971 22.4868 19.7971 23.8438Z" fill="#109E4C"/>
+										</g>
+										<defs>
+										<clipPath id="clip2">
+										<rect width="28" height="28" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	
+    <main class="main" role="main">
+
+		<div class="section-breadcrumb clearfix">
+			<div class="container clearfix">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+						<li class="breadcrumb-item active" aria-current="page">Liên hệ</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+
+
+		<section class="section-iframe-3d-hall clearfix">
+			<div class="section-iframe-3d-hall-inner">
+				<iframe src="https://tourzy.webvr.vn/agri/" title="tech-expo-virtual" width="414" height="600" style="width: 100%; border: 0"></iframe>
+			</div>
+		</section>
+
+
+
+		<section class="section-form-tabs clearfix">
+			<div class="container clearfix">
+				<div class="wrap-form-tabs">
+					<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<a class="nav-link active" id="pills-form-1-tab" data-bs-toggle="pill" href="#pills-form-1" role="tab" aria-controls="pills-form-1" aria-selected="true">Mời đặt gian hàng</a>
+						</li>
+						<li class="nav-item" role="presentation">
+							<a class="nav-link" id="pills-form-2-tab" data-bs-toggle="pill" href="#pills-form-2" role="tab" aria-controls="pills-form-2" aria-selected="false">Mời tài trợ</a>
+						</li>
+					</ul>
+					<div class="tab-content" id="pills-tabContent">
+						<div class="tab-pane fade show active" id="pills-form-1" role="tabpanel" aria-labelledby="pills-form-1-tab">
+
+							<div class="contact-form">
+								<form action="" method="post" class="form-horizontal">
+									<fieldset>
+
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_name_company" class="col-sm-3 col-form-label">Tên doanh nghiệp:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_name_company" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_phone" class="col-sm-3 col-form-label">Số điện thoại:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_phone" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_email" class="col-sm-3 col-form-label">Email:</label>
+											<div class="col-sm-9">
+												<input type="email" class="form-control" name="" id="frm_home_email" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_content" class="col-sm-3 col-form-label">Nội dung:</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" name="" id="frm_home_content" rows="3" required></textarea>
+											</div>
+										</div>
+										<!-- Text input-->
+										<!-- <div class="form-group row" id="captcha_check"> ... </div> -->
+										<div class="form-group row">
+											<label class="col-sm-3 col-form-label"></label>
+											<div class="col-sm-9">
+												<button type="submit" class="btn btn-submit">Gửi</button>
+											</div>
+										</div>
+
+									</fieldset>
+									
+								</form>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="pills-form-2" role="tabpanel" aria-labelledby="pills-form-2-tab">
+
+							<div class="contact-form">
+								<form action="" method="post" class="form-horizontal">
+									<fieldset>
+
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_name_company" class="col-sm-3 col-form-label">Tên doanh nghiệp:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_02_name_company" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_phone" class="col-sm-3 col-form-label">Số điện thoại:</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" name="" id="frm_home_02_phone" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_email" class="col-sm-3 col-form-label">Email:</label>
+											<div class="col-sm-9">
+												<input type="email" class="form-control" name="" id="frm_home_02_email" required>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label for="frm_home_02_content" class="col-sm-3 col-form-label">Nội dung:</label>
+											<div class="col-sm-9">
+												<textarea class="form-control" name="" id="frm_home_02_content" rows="3" required></textarea>
+											</div>
+										</div>
+										<!-- Text input-->
+										<div class="form-group row">
+											<label class="col-sm-3 col-form-label"></label>
+											<div class="col-sm-9">
+												<button type="submit" class="btn btn-submit">Gửi câu hỏi</button>
+											</div>
+										</div>
+
+									</fieldset>
+									
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section-unit-3 clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					<div class="unit-box-title">
+						<h2 class="title-name">Đơn vị thực hiện</h2>
+					</div>
+
+					<div class="unit-box-list">
+
+						<div class="unit-list" id="unit_list">
+
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_01.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_02.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_03.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+							<div class="item-unit">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a js-resize-ratio" data-ratio-resize="1x1" href="javascript:void(0);" title="">
+											<img src="images/unit_logo_04.png" alt="">
+										</a>
+									</div>
+								</div>
+							</div><!-- End item -->
+
+
+						</div>
+
+					</div>
+
+
+					<svg width="0" height="0" viewBox="0 0 218 224" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<defs>
+							<pattern id="unit_pattern_1" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_1" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_2" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_2" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_3" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							<pattern id="unit_pattern_4" patternContentUnits="objectBoundingBox" width="1" height="1">
+								<use xlink:href="#img_unit_4" transform="translate(0 -0.0100572) scale(0.00302115)"/>
+							</pattern>
+							
+							<linearGradient id="unit_linear" x1="109" y1="221" x2="109" y2="3.00001" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#EEF3FF"/>
+								<stop offset="1" stop-color="#F6F9FF"/>
+							</linearGradient>
+
+							<mask id="unit_mask" mask-type="alpha" maskUnits="userSpaceOnUse" x="14" y="9" width="190" height="206">
+								<path d="M92.7456 210.714C102.804 216.429 115.196 216.429 125.254 210.714L187.746 175.209C197.804 169.495 204 158.934 204 147.504V76.4954C204 65.0662 197.804 54.5052 187.746 48.7906L125.254 13.286C115.196 7.57135 102.804 7.57135 92.7456 13.2859L30.2544 48.7906C20.1962 54.5052 14 65.0662 14 76.4954V147.504C14 158.934 20.1962 169.495 30.2544 175.209L92.7456 210.714Z" fill="black"/>
+							</mask>
+
+							<image id="img_unit_1" width="531" height="329" xlink:href="https://via.placeholder.com/300"/>
+							<image id="img_unit_2" width="331" height="329" xlink:href="images/unit_logo_02.png"/>
+							<image id="img_unit_3" width="331" height="329" xlink:href="images/unit_logo_03.png"/>
+							<image id="img_unit_4" width="331" height="329" xlink:href="images/unit_logo_04.png"/>
+						</defs>
+					</svg>
+
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="section-unit clearfix">
+			<div class="container clearfix">
+				<div class="unit-inner">
+					<div class="unit-box-title">
+						<div class="title-name">Đơn vị tài trợ</div>
+					</div>
+					<div class="unit-box-list">
+
+						<div class="title-level-box">
+							<div class="title-level-name">Vàng</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.coca-cola.com/" title="Cocacola">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea650f2f1554cocacola.png" alt="Cocacola">
+										</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="title-level-box">
+							<div class="title-level-name">Bạc</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.britishcouncil.vn/" title="British Council">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6510463bcabritish-council.png" alt="British Council">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.msb.com.vn/" title="MSB">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6511be8422msb.png" alt="MSB">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="title-level-box">
+							<div class="title-level-name">Đồng</div>
+						</div>
+						<div class="unit-list">
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="http://royaltea.com.vn/" title="Royaltea">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6512a5b858royaltea.png" alt="Royaltea">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://www.grab.com/vn/" title="Grab">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea65156f4037grab.png" alt="Grab">
+										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="unit-item">
+								<div class="item-inner">
+									<div class="item-image">
+										<a class="item-image-a" href="https://bitis.com.vn/pages/bitis-hunter" title="BitisHunter">
+											<img src="https://i-fair.vnecdn.net/2020/04/27/5ea6518ec908ebitis-hunter.png" alt="BitisHunter">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    </main>
+    
+
+
+	<footer class="footer footer_area clearfix" id="footer_area">
+			<div class="container clearfix">
+				<div class="footer-inner clearfix">
+					<div class="footer-left">
+						<a class="logo" href="index.html" title="">
+							<img src="images/logo-footer.svg" alt="">
+						</a>
+					</div>
+
+					<div class="footer-right">
+						<div class="wrap-txt-1">
+							<p>® VnExpress giữ bản quyền nội dung trên website này</p>
+						</div>
+						<div class="wrap-txt-2">
+							<p>email: <a href="" title=""><strong>onlineeducation@fair2020.net</strong></a></p>
+							<p>hotline: <strong>024 7300 9999 - Ext 4845</strong></p>
+						</div>					
+					</div>
+
+					<div class="footer-socail">
+						<div class="list-item-socail">
+							<p><a href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Ffair.vnexpress.net/edu" rel="nofollow" onclick="return !window.open(this.href, 'Facebook', 'width=640,height=400')" title="Chia sẻ qua Facebook"><i class="fab fa-facebook-f"></i></a> <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Ffair.vnexpress.net/edu&amp;text=Agriculture Fair 2020 - VnExpress" rel="nofollow" onclick="return !window.open(this.href, 'Twitter', 'width=640,height=400')" title="Chia sẻ qua Twitter"><i class="fab fa-twitter"></i></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+	<span class="btn-go-top back-to-top-badge back-to-top-small"><i class="fal fa-angle-up"></i></span>
+
+
+
+	<!-- Start popup menu -->
+	<div id="showNavSideMenu" class="modal fade modal-nav-side-menu" role="dialog">
+		<div class="modal-dialog">
+
+			<nav class="nav-side-menu divFadeInLeft" id="nav-side-menu">
+				<span class="btn-close-nav" data-bs-dismiss="modal">
+					<svg viewBox="0 0 40 40"><path d="M10,10 L30,30 M30,10 L10,30" /></svg>
+				</span>
+				<div class="menu-list">
+					<nav>
+						<ul>
+
+							<li>
+								<a class="active" href="m.index.html" title="">Trang chủ</a>
+							</li>
+							<li>
+								<a href="about.html" title="">Giới thiệu</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Ngành nghề</a>
+							</li>
+							<li>
+								<a href="booth-list.html" title="">Danh sách công ty</a>
+							</li>
+							<li>
+								<a href="news-list.html" title="">Tin tức</a>
+							</li>
+							<li>
+								<a href="QA.html" title="">Hỏi đáp</a>
+							</li>
+							<li>
+								<a href="contact.html" title="">Liên hệ</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+	<!-- End popup menu -->
+
+
+	<!-- Start #wrap_popup_page - Group popup page - Globe -->
+	<div class="wrap-popup-page" id="wrap_popup_page">
+		<!-- build:popup -->
+	</div>
+	<!-- End #wrap_popup_page - Group popup page - Globe -->
+
+	<script src="js/main.min.js?v=99"></script>
+	
+    
+	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
+</body>
+</html>

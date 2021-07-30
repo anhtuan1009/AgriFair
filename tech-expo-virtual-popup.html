@@ -167,10 +167,17 @@
 		</div>
 
 
-		<section class="section-iframe-3d-hall clearfix">
-			<div class="section-iframe-3d-hall-inner">
-				<iframe src="https://tourzy.webvr.vn/agri/" title="tech-expo-virtual" width="414" height="600" style="width: 100%; border: 0"></iframe>
-			</div>
+		<section class="section-iframe-3d-hall clearfix" id="iframe_banner_hall_area">
+			<button class="section-iframe-3d-hall-inner js_show_popup_360" data-iframe="true"
+				data-src="https://tourzy.webvr.vn/agri/"
+				data-iframe-title="Triển lãm thực tế ảo">
+				<picture>
+					<source srcset="images/preview-hall-03-mobile.png" media="(max-width: 767px)">
+					<source srcset="images/preview-hall-03-pc.png" media="(min-width: 768px)">
+					<source srcset="images/preview-hall-03-mobile.png">
+					<img src="images/preview-hall-03-mobile.png" alt="" class="responsive">
+				</picture>
+			</button>
 		</section>
 
 
@@ -466,8 +473,8 @@
 			</div>
 		</section>
 
-    </main>
-    
+	</main>
+	
 
 
 	<footer class="footer footer_area clearfix" id="footer_area">
@@ -558,7 +565,22 @@
 
 	<script src="js/main.min.js?v=96"></script>
 	
-    
+	<script defer>
+		$(document).ready(function(){
+			$(".js_show_popup_360").lightGallery({
+				selector: 'this',
+				hideBarsDelay: 0,
+				rotate: false,
+				flipHorizontal: false,
+				flipVertical: false,
+				share: false,
+				zoom: false,
+				download: false,
+				counter: false
+			});
+		});
+	</script>
+	
 	<!-- <script src="theme/frontend/js/fontawesome.js" defer></script> -->
 </body>
 </html>
